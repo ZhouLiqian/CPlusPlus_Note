@@ -87,8 +87,8 @@ private:
 
 class Example{
 public:
-    static double rate = 6.5;
+    static constexpr double profit = 6.5;
     static const int vecSize = 20;
-    vector<double> vec(vecSize);
+    static vector<double> vec(const int vecSize);
 };
 #endif
