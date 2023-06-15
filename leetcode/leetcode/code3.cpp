@@ -1,6 +1,7 @@
 //  code3.cpp
 //  leetcode
 //  Created by Qian on 6/14/23.
+//  反转链表并存入数组
 
 #include <iostream>
 using namespace::std;
