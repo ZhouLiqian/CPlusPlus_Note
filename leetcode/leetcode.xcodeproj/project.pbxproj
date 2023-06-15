@@ -13,6 +13,7 @@
 		8EADB1A42A39DCE300F00CD9 /* code5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EADB1A32A39DCE300F00CD9 /* code5.cpp */; };
 		8EADB1A62A3AB00800F00CD9 /* code6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EADB1A52A3AB00800F00CD9 /* code6.cpp */; };
 		8EADB1A82A3AE10200F00CD9 /* code7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EADB1A72A3AE10200F00CD9 /* code7.cpp */; };
+		8EADB1AA2A3B32AF00F00CD9 /* code8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EADB1A92A3B32AF00F00CD9 /* code8.cpp */; };
 		8EE9BA712A1B842F00D6DC7C /* code1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EE9BA6F2A1B842F00D6DC7C /* code1.cpp */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		8EADB1A32A39DCE300F00CD9 /* code5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code5.cpp; sourceTree = "<group>"; };
 		8EADB1A52A3AB00800F00CD9 /* code6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code6.cpp; sourceTree = "<group>"; };
 		8EADB1A72A3AE10200F00CD9 /* code7.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code7.cpp; sourceTree = "<group>"; };
+		8EADB1A92A3B32AF00F00CD9 /* code8.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code8.cpp; sourceTree = "<group>"; };
 		8EE9BA652A1B83EC00D6DC7C /* leetcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE9BA6F2A1B842F00D6DC7C /* code1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code1.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 				8EADB1A32A39DCE300F00CD9 /* code5.cpp */,
 				8EADB1A52A3AB00800F00CD9 /* code6.cpp */,
 				8EADB1A72A3AE10200F00CD9 /* code7.cpp */,
+				8EADB1A92A3B32AF00F00CD9 /* code8.cpp */,
 			);
 			path = leetcode;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 				8EADB1A42A39DCE300F00CD9 /* code5.cpp in Sources */,
 				8EADB1A62A3AB00800F00CD9 /* code6.cpp in Sources */,
 				8EE9BA712A1B842F00D6DC7C /* code1.cpp in Sources */,
+				8EADB1AA2A3B32AF00F00CD9 /* code8.cpp in Sources */,
 				8EADB1A82A3AE10200F00CD9 /* code7.cpp in Sources */,
 				8EADB17E2A34177800F00CD9 /* code2.cpp in Sources */,
 			);
