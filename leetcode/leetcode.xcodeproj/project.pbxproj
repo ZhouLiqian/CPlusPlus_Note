@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E6DC1AC2A3FF06F00062ED7 /* code9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E6DC1AB2A3FF06F00062ED7 /* code9.cpp */; };
+		8E6DC1AE2A3FFACF00062ED7 /* code10.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E6DC1AD2A3FFACF00062ED7 /* code10.cpp */; };
+		8E6DC1B02A40053200062ED7 /* code11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E6DC1AF2A40053200062ED7 /* code11.cpp */; };
 		8EADB17E2A34177800F00CD9 /* code2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EADB17D2A34177800F00CD9 /* code2.cpp */; };
 		8EADB1A02A398B2900F00CD9 /* code3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EADB19F2A398B2900F00CD9 /* code3.cpp */; };
 		8EADB1A22A3996B200F00CD9 /* code4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EADB1A12A3996B200F00CD9 /* code4.cpp */; };
@@ -30,6 +33,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8E6DC1AB2A3FF06F00062ED7 /* code9.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code9.cpp; sourceTree = "<group>"; };
+		8E6DC1AD2A3FFACF00062ED7 /* code10.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code10.cpp; sourceTree = "<group>"; };
+		8E6DC1AF2A40053200062ED7 /* code11.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code11.cpp; sourceTree = "<group>"; };
 		8EADB17D2A34177800F00CD9 /* code2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code2.cpp; sourceTree = "<group>"; };
 		8EADB19F2A398B2900F00CD9 /* code3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code3.cpp; sourceTree = "<group>"; };
 		8EADB1A12A3996B200F00CD9 /* code4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code4.cpp; sourceTree = "<group>"; };
@@ -79,6 +85,9 @@
 				8EADB1A52A3AB00800F00CD9 /* code6.cpp */,
 				8EADB1A72A3AE10200F00CD9 /* code7.cpp */,
 				8EADB1A92A3B32AF00F00CD9 /* code8.cpp */,
+				8E6DC1AB2A3FF06F00062ED7 /* code9.cpp */,
+				8E6DC1AD2A3FFACF00062ED7 /* code10.cpp */,
+				8E6DC1AF2A40053200062ED7 /* code11.cpp */,
 			);
 			path = leetcode;
 			sourceTree = "<group>";
@@ -140,10 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E6DC1AC2A3FF06F00062ED7 /* code9.cpp in Sources */,
 				8EADB1A02A398B2900F00CD9 /* code3.cpp in Sources */,
 				8EADB1A22A3996B200F00CD9 /* code4.cpp in Sources */,
+				8E6DC1B02A40053200062ED7 /* code11.cpp in Sources */,
 				8EADB1A42A39DCE300F00CD9 /* code5.cpp in Sources */,
 				8EADB1A62A3AB00800F00CD9 /* code6.cpp in Sources */,
+				8E6DC1AE2A3FFACF00062ED7 /* code10.cpp in Sources */,
 				8EE9BA712A1B842F00D6DC7C /* code1.cpp in Sources */,
 				8EADB1AA2A3B32AF00F00CD9 /* code8.cpp in Sources */,
 				8EADB1A82A3AE10200F00CD9 /* code7.cpp in Sources */,
