@@ -28,7 +28,6 @@ public:
             empty_vector.push_back(head -> val);
         }
         //判断回文
-        int flag = 0;
         for(int i = 0; i < empty_vector.size(); i++){
             if(empty_vector[i] != empty_vector[empty_vector.size() - i - 1]){
                 return false;

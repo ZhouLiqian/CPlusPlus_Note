@@ -10,6 +10,10 @@
 		8E6DC1AC2A3FF06F00062ED7 /* code9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E6DC1AB2A3FF06F00062ED7 /* code9.cpp */; };
 		8E6DC1AE2A3FFACF00062ED7 /* code10.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E6DC1AD2A3FFACF00062ED7 /* code10.cpp */; };
 		8E6DC1B02A40053200062ED7 /* code11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E6DC1AF2A40053200062ED7 /* code11.cpp */; };
+		8EA67A0E2A41672E0065C9E8 /* code12.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EA67A0D2A41672E0065C9E8 /* code12.cpp */; };
+		8EA67A102A4186FF0065C9E8 /* code13.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EA67A0F2A4186FF0065C9E8 /* code13.cpp */; };
+		8EA67A122A4199250065C9E8 /* code14.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EA67A112A4199250065C9E8 /* code14.cpp */; };
+		8EA67A142A41D5AB0065C9E8 /* code15.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EA67A132A41D5AB0065C9E8 /* code15.cpp */; };
 		8EADB17E2A34177800F00CD9 /* code2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EADB17D2A34177800F00CD9 /* code2.cpp */; };
 		8EADB1A02A398B2900F00CD9 /* code3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EADB19F2A398B2900F00CD9 /* code3.cpp */; };
 		8EADB1A22A3996B200F00CD9 /* code4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EADB1A12A3996B200F00CD9 /* code4.cpp */; };
@@ -36,6 +40,10 @@
 		8E6DC1AB2A3FF06F00062ED7 /* code9.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code9.cpp; sourceTree = "<group>"; };
 		8E6DC1AD2A3FFACF00062ED7 /* code10.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code10.cpp; sourceTree = "<group>"; };
 		8E6DC1AF2A40053200062ED7 /* code11.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code11.cpp; sourceTree = "<group>"; };
+		8EA67A0D2A41672E0065C9E8 /* code12.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code12.cpp; sourceTree = "<group>"; };
+		8EA67A0F2A4186FF0065C9E8 /* code13.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code13.cpp; sourceTree = "<group>"; };
+		8EA67A112A4199250065C9E8 /* code14.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code14.cpp; sourceTree = "<group>"; };
+		8EA67A132A41D5AB0065C9E8 /* code15.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code15.cpp; sourceTree = "<group>"; };
 		8EADB17D2A34177800F00CD9 /* code2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code2.cpp; sourceTree = "<group>"; };
 		8EADB19F2A398B2900F00CD9 /* code3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code3.cpp; sourceTree = "<group>"; };
 		8EADB1A12A3996B200F00CD9 /* code4.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code4.cpp; sourceTree = "<group>"; };
@@ -88,6 +96,10 @@
 				8E6DC1AB2A3FF06F00062ED7 /* code9.cpp */,
 				8E6DC1AD2A3FFACF00062ED7 /* code10.cpp */,
 				8E6DC1AF2A40053200062ED7 /* code11.cpp */,
+				8EA67A0D2A41672E0065C9E8 /* code12.cpp */,
+				8EA67A0F2A4186FF0065C9E8 /* code13.cpp */,
+				8EA67A112A4199250065C9E8 /* code14.cpp */,
+				8EA67A132A41D5AB0065C9E8 /* code15.cpp */,
 			);
 			path = leetcode;
 			sourceTree = "<group>";
@@ -149,15 +161,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA67A142A41D5AB0065C9E8 /* code15.cpp in Sources */,
 				8E6DC1AC2A3FF06F00062ED7 /* code9.cpp in Sources */,
 				8EADB1A02A398B2900F00CD9 /* code3.cpp in Sources */,
 				8EADB1A22A3996B200F00CD9 /* code4.cpp in Sources */,
 				8E6DC1B02A40053200062ED7 /* code11.cpp in Sources */,
 				8EADB1A42A39DCE300F00CD9 /* code5.cpp in Sources */,
+				8EA67A122A4199250065C9E8 /* code14.cpp in Sources */,
 				8EADB1A62A3AB00800F00CD9 /* code6.cpp in Sources */,
+				8EA67A102A4186FF0065C9E8 /* code13.cpp in Sources */,
 				8E6DC1AE2A3FFACF00062ED7 /* code10.cpp in Sources */,
 				8EE9BA712A1B842F00D6DC7C /* code1.cpp in Sources */,
 				8EADB1AA2A3B32AF00F00CD9 /* code8.cpp in Sources */,
+				8EA67A0E2A41672E0065C9E8 /* code12.cpp in Sources */,
 				8EADB1A82A3AE10200F00CD9 /* code7.cpp in Sources */,
 				8EADB17E2A34177800F00CD9 /* code2.cpp in Sources */,
 			);
