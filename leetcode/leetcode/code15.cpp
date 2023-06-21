@@ -22,14 +22,18 @@ public:
                 // 填一个空白字符然后将idx移动到下一个单词的开头位置
                 if (idx != 0)
                     s[idx++] = ' ';
+                cout << "idx: " << idx << endl;
 
                 // 循环遍历至单词的末尾
                 int end = start;
                 while (end < n && s[end] != ' ')
                     s[idx++] = s[end++];
+                cout << "end: " <<end << endl;
+                cout << "idx_2: " << idx << endl;
 
                 // 反转整个单词
                 reverse(s.begin() + idx - (end - start), s.begin() + idx);
+                cout << "s: " << s << endl;
 
                 // 更新start，去找下一个单词
                 start = end;
