@@ -66,21 +66,3 @@ public:
 private:
     stack<int> stack_1;
 };
-
-int main(){
-    int value;
-    int value_2;
-    int top;
-    MinStack *minStack = new MinStack();
-    minStack -> push(-2);
-    minStack -> push(0);
-    minStack -> push(-3);
-    value = minStack -> min();   //--> 返回 -3.
-    cout << value << endl;
-    minStack -> pop();
-    top = minStack -> top();     //--> 返回 0.
-    cout << top << endl;
-    value_2 = minStack -> min();   //--> 返回 -2.
-    cout << value_2 << endl;
-    return 0;
-}
