@@ -14,7 +14,6 @@ void StackDestroy(StackTnfo *s){
         s -> data = NULL;
         s -> top = s -> capacity = 0;
     }
-    
 }
 
 /*入栈、出栈*/
