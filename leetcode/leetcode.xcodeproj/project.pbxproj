@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8E96B1DA2A45901700B53860 /* code17.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E96B1D92A45901700B53860 /* code17.cpp */; };
+		8E96B1DD2A48126B00B53860 /* code18.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E96B1DC2A48126B00B53860 /* code18.cpp */; };
+		8E96B1E42A48349C00B53860 /* code19.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E96B1E32A48349C00B53860 /* code19.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,8 @@
 		8E6DC1AF2A40053200062ED7 /* code11.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code11.cpp; sourceTree = "<group>"; };
 		8E96B1D72A4572A900B53860 /* code16.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code16.cpp; sourceTree = "<group>"; };
 		8E96B1D92A45901700B53860 /* code17.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code17.cpp; sourceTree = "<group>"; };
+		8E96B1DC2A48126B00B53860 /* code18.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code18.cpp; sourceTree = "<group>"; };
+		8E96B1E32A48349C00B53860 /* code19.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code19.cpp; sourceTree = "<group>"; };
 		8EA67A0D2A41672E0065C9E8 /* code12.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code12.cpp; sourceTree = "<group>"; };
 		8EA67A0F2A4186FF0065C9E8 /* code13.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code13.cpp; sourceTree = "<group>"; };
 		8EA67A112A4199250065C9E8 /* code14.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code14.cpp; sourceTree = "<group>"; };
@@ -54,6 +58,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E96B1DE2A4812E000B53860 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				8EE9BA6F2A1B842F00D6DC7C /* code1.cpp */,
+				8EADB17D2A34177800F00CD9 /* code2.cpp */,
+				8EA67A132A41D5AB0065C9E8 /* code15.cpp */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		8E96B1DF2A48131200B53860 /* Linklist */ = {
+			isa = PBXGroup;
+			children = (
+				8EADB19F2A398B2900F00CD9 /* code3.cpp */,
+				8EADB1A12A3996B200F00CD9 /* code4.cpp */,
+				8EADB1A32A39DCE300F00CD9 /* code5.cpp */,
+				8EADB1A52A3AB00800F00CD9 /* code6.cpp */,
+				8EADB1A72A3AE10200F00CD9 /* code7.cpp */,
+				8EADB1A92A3B32AF00F00CD9 /* code8.cpp */,
+				8E6DC1AB2A3FF06F00062ED7 /* code9.cpp */,
+				8E6DC1AD2A3FFACF00062ED7 /* code10.cpp */,
+				8E6DC1AF2A40053200062ED7 /* code11.cpp */,
+				8EA67A0D2A41672E0065C9E8 /* code12.cpp */,
+			);
+			path = Linklist;
+			sourceTree = "<group>";
+		};
+		8E96B1E02A48140B00B53860 /* Vector */ = {
+			isa = PBXGroup;
+			children = (
+				8EA67A0F2A4186FF0065C9E8 /* code13.cpp */,
+				8EA67A112A4199250065C9E8 /* code14.cpp */,
+			);
+			path = Vector;
+			sourceTree = "<group>";
+		};
+		8E96B1E12A48148300B53860 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				8E96B1D72A4572A900B53860 /* code16.cpp */,
+				8E96B1D92A45901700B53860 /* code17.cpp */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
+		8E96B1E22A4814A700B53860 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				8E96B1DC2A48126B00B53860 /* code18.cpp */,
+				8E96B1E32A48349C00B53860 /* code19.cpp */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
 		8EE9BA5C2A1B83EC00D6DC7C = {
 			isa = PBXGroup;
 			children = (
@@ -73,23 +131,11 @@
 		8EE9BA672A1B83EC00D6DC7C /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
-				8EE9BA6F2A1B842F00D6DC7C /* code1.cpp */,
-				8EADB17D2A34177800F00CD9 /* code2.cpp */,
-				8EADB19F2A398B2900F00CD9 /* code3.cpp */,
-				8EADB1A12A3996B200F00CD9 /* code4.cpp */,
-				8EADB1A32A39DCE300F00CD9 /* code5.cpp */,
-				8EADB1A52A3AB00800F00CD9 /* code6.cpp */,
-				8EADB1A72A3AE10200F00CD9 /* code7.cpp */,
-				8EADB1A92A3B32AF00F00CD9 /* code8.cpp */,
-				8E6DC1AB2A3FF06F00062ED7 /* code9.cpp */,
-				8E6DC1AD2A3FFACF00062ED7 /* code10.cpp */,
-				8E6DC1AF2A40053200062ED7 /* code11.cpp */,
-				8EA67A0D2A41672E0065C9E8 /* code12.cpp */,
-				8EA67A0F2A4186FF0065C9E8 /* code13.cpp */,
-				8EA67A112A4199250065C9E8 /* code14.cpp */,
-				8EA67A132A41D5AB0065C9E8 /* code15.cpp */,
-				8E96B1D72A4572A900B53860 /* code16.cpp */,
-				8E96B1D92A45901700B53860 /* code17.cpp */,
+				8E96B1E22A4814A700B53860 /* Queue */,
+				8E96B1E12A48148300B53860 /* Stack */,
+				8E96B1E02A48140B00B53860 /* Vector */,
+				8E96B1DE2A4812E000B53860 /* String */,
+				8E96B1DF2A48131200B53860 /* Linklist */,
 			);
 			path = leetcode;
 			sourceTree = "<group>";
@@ -152,6 +198,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E96B1DA2A45901700B53860 /* code17.cpp in Sources */,
+				8E96B1DD2A48126B00B53860 /* code18.cpp in Sources */,
+				8E96B1E42A48349C00B53860 /* code19.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

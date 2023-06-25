@@ -40,7 +40,7 @@ public:
             }
         }
         else{
-            int diff = sum_B -sum_A;
+            int diff = sum_B - sum_A;
             while (diff--) {
                 q = q -> next;
             }
