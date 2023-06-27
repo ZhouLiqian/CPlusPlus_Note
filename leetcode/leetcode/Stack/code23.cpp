@@ -36,7 +36,7 @@ public:
         {
             //给定值大于栈顶元素
             int top_value = sta.top();
-            while(val > top_value && !sta.empty())
+            while(!sta.empty() && val > top_value)
             {
                 save_sta.push(top_value);
                 sta.pop();
@@ -102,15 +102,3 @@ public:
 private:
     priority_queue<int, vector<int>, greater<int>> min_que;
 };
-
-int main(){
-    SortedStack *obj = new SortedStack();
-    obj->push(1);
-    obj->push(2);
-    int top = obj->peek();
-    cout << top << endl; //1
-    obj->pop();
-    top = obj->peek();
-    cout << top << endl; //2
-    return 0;
-}
