@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E057F892A4A7F2600EBA6F9 /* code23.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E057F882A4A7F2600EBA6F9 /* code23.cpp */; };
 		8E96B1DA2A45901700B53860 /* code17.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E96B1D92A45901700B53860 /* code17.cpp */; };
 		8E96B1DD2A48126B00B53860 /* code18.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E96B1DC2A48126B00B53860 /* code18.cpp */; };
 		8E96B1E42A48349C00B53860 /* code19.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E96B1E32A48349C00B53860 /* code19.cpp */; };
@@ -28,6 +29,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8E057F882A4A7F2600EBA6F9 /* code23.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code23.cpp; sourceTree = "<group>"; };
 		8E6DC1AB2A3FF06F00062ED7 /* code9.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code9.cpp; sourceTree = "<group>"; };
 		8E6DC1AD2A3FFACF00062ED7 /* code10.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code10.cpp; sourceTree = "<group>"; };
 		8E6DC1AF2A40053200062ED7 /* code11.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code11.cpp; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				8EE9BA6F2A1B842F00D6DC7C /* code1.cpp */,
 				8EADB17D2A34177800F00CD9 /* code2.cpp */,
 				8EA67A132A41D5AB0065C9E8 /* code15.cpp */,
+				8E96B1E92A49708400B53860 /* code22.cpp */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -106,6 +109,7 @@
 				8E96B1D72A4572A900B53860 /* code16.cpp */,
 				8E96B1D92A45901700B53860 /* code17.cpp */,
 				8E96B1E72A495EF300B53860 /* code21.cpp */,
+				8E057F882A4A7F2600EBA6F9 /* code23.cpp */,
 			);
 			path = Stack;
 			sourceTree = "<group>";
@@ -116,7 +120,6 @@
 				8E96B1DC2A48126B00B53860 /* code18.cpp */,
 				8E96B1E32A48349C00B53860 /* code19.cpp */,
 				8E96B1E52A49323E00B53860 /* code20.cpp */,
-				8E96B1E92A49708400B53860 /* code22.cpp */,
 			);
 			path = Queue;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E96B1E82A495EF300B53860 /* code21.cpp in Sources */,
+				8E057F892A4A7F2600EBA6F9 /* code23.cpp in Sources */,
 				8E96B1E62A49323E00B53860 /* code20.cpp in Sources */,
 				8E96B1DA2A45901700B53860 /* code17.cpp in Sources */,
 				8E96B1DD2A48126B00B53860 /* code18.cpp in Sources */,

@@ -33,12 +33,3 @@ public:
         return min_s;
     }
 };
-
-int main(){
-    string s = {"baaca"};
-    int k = 3;
-    Solution solution;
-    string min_s = solution.orderlyQueue(s, k);
-    cout << min_s << endl;
-    return 0;
-}
