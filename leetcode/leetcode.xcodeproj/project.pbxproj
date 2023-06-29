@@ -15,12 +15,14 @@
 		8E057F952A4C18CA00EBA6F9 /* code28.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E057F942A4C18CA00EBA6F9 /* code28.cpp */; };
 		8E057F972A4C5D6600EBA6F9 /* code29.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E057F962A4C5D6600EBA6F9 /* code29.cpp */; };
 		8E057F992A4D21CB00EBA6F9 /* code30.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E057F982A4D21CB00EBA6F9 /* code30.cpp */; };
+		8E057F9B2A4D5D9200EBA6F9 /* code31.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E057F9A2A4D5D9200EBA6F9 /* code31.cpp */; };
 		8E96B1DA2A45901700B53860 /* code17.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E96B1D92A45901700B53860 /* code17.cpp */; };
 		8E96B1DD2A48126B00B53860 /* code18.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E96B1DC2A48126B00B53860 /* code18.cpp */; };
 		8E96B1E42A48349C00B53860 /* code19.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E96B1E32A48349C00B53860 /* code19.cpp */; };
 		8E96B1E62A49323E00B53860 /* code20.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E96B1E52A49323E00B53860 /* code20.cpp */; };
 		8E96B1E82A495EF300B53860 /* code21.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E96B1E72A495EF300B53860 /* code21.cpp */; };
 		8E96B1EA2A49708400B53860 /* code22.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E96B1E92A49708400B53860 /* code22.cpp */; };
+		8EDEF5662A4D7AE700F46001 /* code32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDEF5652A4D7AE700F46001 /* code32.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +46,7 @@
 		8E057F942A4C18CA00EBA6F9 /* code28.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code28.cpp; sourceTree = "<group>"; };
 		8E057F962A4C5D6600EBA6F9 /* code29.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code29.cpp; sourceTree = "<group>"; };
 		8E057F982A4D21CB00EBA6F9 /* code30.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code30.cpp; sourceTree = "<group>"; };
+		8E057F9A2A4D5D9200EBA6F9 /* code31.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code31.cpp; sourceTree = "<group>"; };
 		8E6DC1AB2A3FF06F00062ED7 /* code9.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code9.cpp; sourceTree = "<group>"; };
 		8E6DC1AD2A3FFACF00062ED7 /* code10.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code10.cpp; sourceTree = "<group>"; };
 		8E6DC1AF2A40053200062ED7 /* code11.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code11.cpp; sourceTree = "<group>"; };
@@ -65,6 +68,7 @@
 		8EADB1A52A3AB00800F00CD9 /* code6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code6.cpp; sourceTree = "<group>"; };
 		8EADB1A72A3AE10200F00CD9 /* code7.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code7.cpp; sourceTree = "<group>"; };
 		8EADB1A92A3B32AF00F00CD9 /* code8.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code8.cpp; sourceTree = "<group>"; };
+		8EDEF5652A4D7AE700F46001 /* code32.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code32.cpp; sourceTree = "<group>"; };
 		8EE9BA652A1B83EC00D6DC7C /* leetcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE9BA6F2A1B842F00D6DC7C /* code1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code1.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,6 +121,8 @@
 				8E057F942A4C18CA00EBA6F9 /* code28.cpp */,
 				8E057F962A4C5D6600EBA6F9 /* code29.cpp */,
 				8E057F982A4D21CB00EBA6F9 /* code30.cpp */,
+				8E057F9A2A4D5D9200EBA6F9 /* code31.cpp */,
+				8EDEF5652A4D7AE700F46001 /* code32.cpp */,
 			);
 			path = Vector;
 			sourceTree = "<group>";
@@ -230,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E057F9B2A4D5D9200EBA6F9 /* code31.cpp in Sources */,
 				8E057F912A4B024900EBA6F9 /* code26.cpp in Sources */,
 				8E057F972A4C5D6600EBA6F9 /* code29.cpp in Sources */,
 				8E96B1E82A495EF300B53860 /* code21.cpp in Sources */,
@@ -240,6 +247,7 @@
 				8E96B1DA2A45901700B53860 /* code17.cpp in Sources */,
 				8E057F8B2A4AB79500EBA6F9 /* code24.cpp in Sources */,
 				8E96B1DD2A48126B00B53860 /* code18.cpp in Sources */,
+				8EDEF5662A4D7AE700F46001 /* code32.cpp in Sources */,
 				8E057F932A4BD65700EBA6F9 /* code27.cpp in Sources */,
 				8E96B1EA2A49708400B53860 /* code22.cpp in Sources */,
 				8E96B1E42A48349C00B53860 /* code19.cpp in Sources */,
