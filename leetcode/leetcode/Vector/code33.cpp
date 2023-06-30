@@ -29,6 +29,7 @@ public:
         return count;
     }
     
+    //二分法
     int search_3(vector<int>& nums, int target) {
         /* 搜索右边界 right */
         int i = 0, j = int(nums.size()) - 1;
