@@ -11,6 +11,8 @@ using namespace::std;
 
 class Solution {
 public:
+    
+    //内置函数
     int search(vector<int>& nums, int target) {
         unordered_multiset<int> set;
         for(int num : nums){
@@ -19,6 +21,7 @@ public:
         return int(set.count(target));
     }
     
+    //遍历
     int search_2(vector<int>& nums, int target) {
         int count = 0;
         for(int num : nums){
@@ -33,20 +36,26 @@ public:
     int search_3(vector<int>& nums, int target) {
         /* 搜索右边界 right */
         int i = 0, j = int(nums.size()) - 1;
-        while(i <= j) {
-            int m = (i + j) / 2;
-            if(nums[m] <= target) i = m + 1;
-            else j = m - 1;
+        while (i <= j) {
+            int mid = (i + j) / 2;
+            if(nums[mid] <= target)
+                i = mid + 1;
+            else
+                j = mid - 1;
         }
         int right = i;
         /* 若数组中无 target ，则提前返回 */
-        if(j >= 0 && nums[j] != target) return 0;
-        /* 搜索左边界 right */
-        i = 0; j = int(nums.size()) - 1;
-        while(i <= j) {
-            int m = (i + j) / 2;
-            if(nums[m] < target) i = m + 1;
-            else j = m - 1;
+        if(j >= 0 && nums[j] != target)
+            return 0;
+        /* 搜索左边界 left */
+        i = 0;
+        j = int(nums.size()) - 1;
+        while (i <= j) {
+            int mid = (i + j) / 2;
+            if(nums[mid] >= target)
+                j = mid - 1;
+            else
+                i = mid + 1;
         }
         int left = j;
         return right - left - 1;

@@ -12,7 +12,7 @@ class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
         int start_row = 0, start_column = 0;
-        int end_row = matrix.size() - 1, end_column = matrix[0].size() - 1;
+        int end_row = int(matrix.size()) - 1, end_column = int(matrix[0].size()) - 1;
         vector<int> cout_data;
         if (matrix.empty()) {
                 return cout_data;
