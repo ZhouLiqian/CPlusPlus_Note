@@ -5,7 +5,7 @@
 #include "bintree.hpp"
 
 //前序遍历
-void preorder(BinTreeNode *T){
+void BinTree::preorder(BinTreeNode *T){
     stack<BinTreeNode*> s;
     while (T || !s.empty()) {
         if(T != NULL){
@@ -22,7 +22,7 @@ void preorder(BinTreeNode *T){
 }
 
 //中序遍历
-void inorder(BinTreeNode *T){
+void BinTree::inorder(BinTreeNode *T){
     stack<BinTreeNode*> s;
     while (T || !s.empty()) {
         if(T != NULL){
@@ -39,7 +39,7 @@ void inorder(BinTreeNode *T){
 }
 
 //后序遍历
-void postorder(BinTreeNode *T){
+void BinTree::postorder(BinTreeNode *T){
     BinTreeNode *r = NULL;
     stack<BinTreeNode*> s;
     while (T || !s.empty()) {
@@ -65,7 +65,7 @@ void postorder(BinTreeNode *T){
 }
 
 //层序遍历
-void leveorder(BinTreeNode *T){
+void BinTree::leveorder(BinTreeNode *T){
     deque<BinTreeNode*> d;
     if(T)//根结点不为空时入队
         d.push_back(T);
@@ -80,4 +80,143 @@ void leveorder(BinTreeNode *T){
     }
 }
 
-//增删改查
+//增加元素
+void BinTree::addtree(int data){
+    if(head == NULL){
+        head = new BinTreeNode(data);
+    }
+    else{
+        BinTreeNode *n = head;
+        while (n != NULL) {
+            //向左
+            if(data < n -> data){
+                if(n -> left != NULL){
+                    n = n -> left;
+                }
+                else{
+                    BinTreeNode *l = new BinTreeNode(data);
+                    n -> left = l;
+                    return;
+                }
+            }
+            else{//向右
+                if(n -> right != NULL){
+                    n = n -> right;
+                }
+                else{
+                    BinTreeNode *l = new BinTreeNode(data);
+                    n -> right = l;
+                    return;
+                }
+            }
+        }
+    }
+}
+
+//删除元素
+void BinTree::deltree(int data){
+    BinTreeNode *n = head;
+    BinTreeNode *parent = nullptr;
+    while (n != NULL) {
+        if(data > n -> data){//向右
+            parent = n;
+            n = n -> right;
+        }
+        else if (data < n -> data){//向左
+            parent = n;
+            n = n -> left;
+        }
+        else{//相等
+            if(n -> left != NULL && n -> right == NULL){//左非空且右空
+                if(parent -> left == n){
+                    parent -> left = n -> left;
+                    delete(n);
+                    return;
+                }
+                else{
+                    parent -> right = n -> left;
+                    delete(n);
+                    return;
+                }
+            }
+            else if (n -> left == NULL && n -> right != NULL){//右非空且左空
+                if(parent -> left == n){
+                    parent -> left = n -> right;
+                    delete(n);
+                    return;
+                }
+                else{
+                    parent -> right = n -> right;
+                    delete(n);
+                    return;
+                }
+            }
+            else if (n -> left == NULL && n -> right == NULL){//左右均空
+                if(parent -> left == n){
+                    parent -> left = NULL;
+                    delete(n);
+                    return;
+                }
+                else{
+                    parent -> right = NULL;
+                    delete(n);
+                    return;
+                }
+            }
+            else{//左右均非空
+                BinTreeNode *sub = n -> right;
+                if(sub -> left == NULL){
+                    sub -> left = n -> left;
+                    if(parent -> left == n){
+                        parent -> left = sub;
+                        delete(n);
+                        return;
+                    }
+                    else{
+                        parent -> right = sub;
+                        delete(n);
+                        return;
+                    }
+                }
+                else{
+                    BinTreeNode *p = sub;
+                    while(sub -> left != NULL)
+                    {//寻找后继节点
+                        p = sub;
+                        sub = sub -> left;
+                    }
+                    p -> left = NULL;
+                    if(parent -> left == n){
+                        sub -> left = n -> left;
+                        sub -> right = n -> right;
+                        parent -> left = sub;
+                        delete(n);
+                        return;
+                    }else{
+                        sub -> left = n -> left;
+                        sub -> right = n -> right;
+                        parent -> right = sub;
+                        delete(n);
+                        return;
+                    }
+                }
+            }
+        }
+    }
+    cout << "没有找到" << endl;
+    return;
+}
+
+//查找元素
+BinTreeNode* BinTree::getnode(int data){
+    BinTreeNode *n = head;
+    while (n != NULL) {
+        if(data < n -> data)
+            n = n -> left;
+        else if (data > n -> data)
+            n = n -> right;
+        else
+            return n;
+    }
+    return NULL;
+}

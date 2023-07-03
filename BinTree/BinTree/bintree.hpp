@@ -21,8 +21,17 @@ struct BinTreeNode{
         right = nullptr;
     }
 };
-void preorder(BinTreeNode T);
-void inorder(BinTreeNode *T);
-void postorder(BinTreeNode *T);
-void leveorder(BinTreeNode *T);
+
+class BinTree{
+private:
+    BinTreeNode *head;
+public:
+    void preorder(BinTreeNode *T);
+    void inorder(BinTreeNode *T);
+    void postorder(BinTreeNode *T);
+    void leveorder(BinTreeNode *T);
+    void addtree(int data);
+    void deltree(int data);
+    BinTreeNode* getnode(int data);
+};
 #endif /* bintree_hpp */
