@@ -4,6 +4,7 @@
 //  Created by Qian on 7/6/23.
 
 #include <iostream>
+#include <stack>
 using namespace::std;
 
 /*输入一棵二叉搜索树，将该二叉搜索树转换成一个排序的循环双向链表。要求不能创建任何新的节点，只能调整树中节点指针的指向*/
@@ -49,5 +50,26 @@ public:
         root -> left = pre;
         pre = root;
         dfs(root -> right);
+    }
+    //非递归
+    void dfs_2(Node *root){
+        stack<Node*> s;
+        while (root || !s.empty()) {
+            if(root != NULL){
+                s.push(root);
+                root = root -> left;
+            }
+            else{
+                root = s.top();
+                s.pop();
+                if(pre)
+                    pre -> right = root;
+                else
+                    head = root;
+                root -> left = pre;
+                pre = root;
+                root = root -> right;
+            }
+        }
     }
 };
