@@ -20,19 +20,20 @@ struct TreeNode{
 class Codec {
 public:
     // Encodes a tree to a single string.
-    void dfs(TreeNode *root, string &str){
-        if(root == nullptr){
+    void rserialize(TreeNode* root, string& str) {
+        if (root == nullptr) {
             str += "None,";
-            return;
+        } else {
+            str += to_string(root->val) + ",";
+            rserialize(root->left, str);
+            rserialize(root->right, str);
         }
-        str += to_string(root -> val) + ",";
-        dfs(root -> left, str);
-        dfs(root -> right, str);
     }
+
     string serialize(TreeNode* root) {
-        string str;
-        dfs(root, str);
-        return str;
+        string ret;
+        rserialize(root, ret);
+        return ret;
     }
 
     // Decodes your encoded data to tree.
@@ -67,3 +68,11 @@ public:
         return rdeserialize(dataArray);
     }
 };
+
+int main(){
+    Codec codec;
+    string str = "1,2,3,None,None,4,5";
+    TreeNode *node = codec.deserialize(str);
+    codec.serialize(node);
+    return 0;
+}
