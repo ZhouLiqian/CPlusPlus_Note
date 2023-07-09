@@ -68,11 +68,3 @@ public:
         return rdeserialize(dataArray);
     }
 };
-
-int main(){
-    Codec codec;
-    string str = "1,2,3,None,None,4,5";
-    TreeNode *node = codec.deserialize(str);
-    codec.serialize(node);
-    return 0;
-}
