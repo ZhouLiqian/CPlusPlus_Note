@@ -4,6 +4,7 @@
 //  Created by Qian on 7/11/23.
 
 #include <iostream>
+#include <set>
 using namespace::std;
 
 /*
@@ -14,6 +15,7 @@ using namespace::std;
 
 class Solution {
 public:
+    //参考
     bool isStraight(vector<int>& nums) {//找出这个序列里最大的数字和最小的数字
         int arr[14] = {0};
         int i,min=14,max=0,num0=0,gap=0;//注意min得赋初值大于13，不然会有问题；max同理
@@ -34,6 +36,31 @@ public:
                 gap++;
         if (gap <= num0)//这个序列min到max直接空着的数字个数要小于等于大小王的个数
             return true;
+        return false;
+    }
+    //自学
+    bool isStraight_2(vector<int>& nums){
+        set<int> arr;
+        int min = 14, max = 0;
+        int zero = 0, diff = 0;
+        for(int i = 0; i < nums.size(); i++){
+            //重复性
+            if(nums[i] != 0 && arr.count(nums[i])) return false;
+            arr.insert(nums[i]);
+            if(nums[i] == 0)
+                zero++;
+            else{
+                if(nums[i] < min)
+                    min = nums[i];
+                if(nums[i] > max)
+                    max = nums[i];
+            }
+        }
+        for(int j = min; j <= max; j++){
+            if(!arr.count(j))
+                diff++;
+        }
+        if(diff <= zero) return true;
         return false;
     }
 };
