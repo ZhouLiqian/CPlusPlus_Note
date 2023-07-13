@@ -17,6 +17,7 @@
 		8E17E2F52A5E558F0095BDBC /* code68.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2F42A5E558F0095BDBC /* code68.cpp */; };
 		8E17E2F72A5F9DAC0095BDBC /* code69.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2F62A5F9DAC0095BDBC /* code69.cpp */; };
 		8E17E2F92A5FA2D30095BDBC /* code70.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2F82A5FA2D30095BDBC /* code70.cpp */; };
+		8E17E2FB2A60237B0095BDBC /* code71.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2FA2A60237B0095BDBC /* code71.cpp */; };
 		8E2D1EEC2A5932240061F6B7 /* code57.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2D1EEB2A5932240061F6B7 /* code57.cpp */; };
 		8E2D1EEE2A59440D0061F6B7 /* code58.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2D1EED2A59440D0061F6B7 /* code58.cpp */; };
 		8E2D1EF02A5962AA0061F6B7 /* code59.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2D1EEF2A5962AA0061F6B7 /* code59.cpp */; };
@@ -55,6 +56,7 @@
 		8E17E2F42A5E558F0095BDBC /* code68.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code68.cpp; sourceTree = "<group>"; };
 		8E17E2F62A5F9DAC0095BDBC /* code69.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code69.cpp; sourceTree = "<group>"; };
 		8E17E2F82A5FA2D30095BDBC /* code70.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code70.cpp; sourceTree = "<group>"; };
+		8E17E2FA2A60237B0095BDBC /* code71.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code71.cpp; sourceTree = "<group>"; };
 		8E2D1E932A5038F70061F6B7 /* code37.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code37.cpp; sourceTree = "<group>"; };
 		8E2D1EAC2A52973B0061F6B7 /* code38.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code38.cpp; sourceTree = "<group>"; };
 		8E2D1EAE2A53AC8A0061F6B7 /* code39.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code39.cpp; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				8E17E2F42A5E558F0095BDBC /* code68.cpp */,
 				8E17E2F62A5F9DAC0095BDBC /* code69.cpp */,
 				8E17E2F82A5FA2D30095BDBC /* code70.cpp */,
+				8E17E2FA2A60237B0095BDBC /* code71.cpp */,
 			);
 			path = "动态规划";
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				8E17E2EC2A5D4E5B0095BDBC /* code64.cpp in Sources */,
 				8E2D1EEE2A59440D0061F6B7 /* code58.cpp in Sources */,
 				8E17E2EA2A5D36BB0095BDBC /* code63.cpp in Sources */,
+				8E17E2FB2A60237B0095BDBC /* code71.cpp in Sources */,
 				8E17E2F02A5E3DD20095BDBC /* code66.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
