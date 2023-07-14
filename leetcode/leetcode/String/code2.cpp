@@ -34,11 +34,6 @@ int strToInt(string str) {
                     last_num = num;
                     num = last_num * 10 + (str[j] - '0');
                 }
-                /*if((num - (str[j] - '0')) / 10 != last_num)
-                {
-                    num = INT_MAX;
-                    break;
-                }*/
             }
             else
             {
@@ -63,11 +58,6 @@ int strToInt(string str) {
                     last_num = num;
                     num = last_num * 10 + (str[k] - '0');
                 }
-                /*if((num - (str[k] - '0')) / 10 != last_num)
-                {
-                    num = -INT_MIN;
-                    break;
-                }*/
             }
             else
             {
@@ -92,11 +82,6 @@ int strToInt(string str) {
                     last_num = num;
                     num = last_num * 10 + (str[pos] - '0');
                 }
-                /*if((num - (str[pos] - '0')) / 10 != last_num)
-                {
-                    num = INT_MAX;
-                    break;
-                }*/
             }
             else
             {
