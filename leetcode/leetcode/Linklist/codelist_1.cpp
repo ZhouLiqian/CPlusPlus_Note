@@ -17,6 +17,13 @@ struct ListNode{
 class Solution {
 public:
     vector<int> reversePrint(ListNode* head) {
-
+        vector<int> node;
+        if(!head) return node;
+        while (head != NULL) {
+            node.push_back(head -> val);
+            head = head -> next;
+        }
+        reverse(node.begin(), node.end());
+        return node;
     }
 };
