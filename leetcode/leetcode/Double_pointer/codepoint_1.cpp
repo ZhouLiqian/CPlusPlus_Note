@@ -1,6 +1,6 @@
 //  code9.cpp
 //  leetcode
-//  链表删除节点
+//  删除链表的节点
 //  Created by Qian on 6/19/23.
 
 #include <iostream>
@@ -41,6 +41,30 @@ public:
         else
         {
             cout << "no val" << endl;
+        }
+        return head;
+    }
+    
+    //自方法
+    ListNode* deleteNode_2(ListNode* head, int val){
+        //判断空
+        if(!head) return head;
+        
+        //头节点
+        if(head -> val == val) return head -> next;
+        
+        //遍历节点
+        ListNode* pre = head;
+        ListNode* cur = head -> next;
+        while (cur != NULL && cur -> val != val) {
+            pre = cur;
+            cur = cur -> next;
+        }
+        if(cur -> val == val){
+            pre -> next = cur -> next;
+        }
+        else{
+            return NULL;
         }
         return head;
     }
