@@ -25,7 +25,8 @@ public:
         }
         return new_nums;
     }
-    //方法二
+    
+    //方法二(双指针)
     vector<int> twoSum_2(vector<int>& nums, int target) {
         int i = 0;
         unsigned long j = nums.size() - 1;

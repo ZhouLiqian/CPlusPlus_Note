@@ -6,6 +6,8 @@
 #include <iostream>
 using namespace::std;
 
+/*输入两个链表，找出它们的第一个公共节点*/
+
 struct ListNode {
     int val;
     ListNode *next;
@@ -13,8 +15,10 @@ struct ListNode {
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
+
 class Solution {
 public:
+    //方法一
     ListNode* sortList(ListNode* head) {
         //返回空
         if(!head || !head -> next)
@@ -44,5 +48,16 @@ public:
         dummy = nullptr;
         delete dummy;
         return head;
+    }
+    
+    //方法二
+    ListNode* sortList(ListNode* head) {
+        ListNode* A = headA;
+        ListNode* B = headB;
+        while(A != B){
+            A = A != NULL ? A -> next : headB;
+            B = B != NULL ? B -> next : headA;
+        }
+        return A;
     }
 };
