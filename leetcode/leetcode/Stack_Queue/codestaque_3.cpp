@@ -24,24 +24,24 @@ public:
     }
     //方法二:双端队列
     vector<int> maxSlidingWindow_2(vector<int>& nums, int k) {
-           unsigned long n = nums.size() ;
-           deque<int> dq ;
-           vector<int> res ;
+       unsigned long n = nums.size() ;
+       deque<int> dq ;
+       vector<int> res ;
 
-           if (nums.size() == 0)
-               return res ;
-       
-           for (int i = 0 ; i < n ; ++i) {
-               while (!dq.empty() && i - dq.front() + 1 > k) {
-                   dq.pop_front() ;
-               }
-               while (!dq.empty() && nums[dq.back()] <= nums[i]) {
-                   dq.pop_back() ;
-               }
-               dq.push_back(i) ;
-               if (i >= k - 1)
-                   res.push_back(nums[dq.front()]) ;
-           }
+       if (nums.size() == 0)
            return res ;
+   
+       for (int i = 0 ; i < n ; ++i) {
+           while (!dq.empty() && i - dq.front() + 1 > k) {
+               dq.pop_front() ;
+           }
+           while (!dq.empty() && nums[dq.back()] <= nums[i]) {
+               dq.pop_back() ;
+           }
+           dq.push_back(i) ;
+           if (i >= k - 1)
+               res.push_back(nums[dq.front()]) ;
        }
+       return res ;
+   }
 };
