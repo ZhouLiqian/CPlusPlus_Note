@@ -7,13 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E17E3062A6271C00095BDBC /* codepoint_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E6DC1AB2A3FF06F00062ED7 /* codepoint_1.cpp */; };
-		8E17E3072A653A270095BDBC /* codepoint_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EA67A0F2A4186FF0065C9E8 /* codepoint_5.cpp */; };
-		8E17E3082A6541860095BDBC /* codepoint_6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EA67A112A4199250065C9E8 /* codepoint_6.cpp */; };
-		8E17E3092A6541EA0095BDBC /* codepoint_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EA67A132A41D5AB0065C9E8 /* codepoint_7.cpp */; };
-		8E17E30E2A6782400095BDBC /* 汽水瓶.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E30D2A6782400095BDBC /* 汽水瓶.cpp */; };
-		8E17E3102A678FAD0095BDBC /* 明明的随机数.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E30F2A678FAD0095BDBC /* 明明的随机数.cpp */; };
-		8E17E3122A67BBB00095BDBC /* 进制转换.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E3112A67BBB00095BDBC /* 进制转换.cpp */; };
+		8E17E3142A67D8980095BDBC /* codesim_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E057F9A2A4D5D9200EBA6F9 /* codesim_1.cpp */; };
+		8E17E3152A67DEAB0095BDBC /* codesim_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E057F8A2A4AB79500EBA6F9 /* codesim_2.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,14 +25,14 @@
 
 /* Begin PBXFileReference section */
 		8E057F882A4A7F2600EBA6F9 /* code23.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code23.cpp; sourceTree = "<group>"; };
-		8E057F8A2A4AB79500EBA6F9 /* code24.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code24.cpp; sourceTree = "<group>"; };
+		8E057F8A2A4AB79500EBA6F9 /* codesim_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codesim_2.cpp; sourceTree = "<group>"; };
 		8E057F8E2A4AFC7700EBA6F9 /* code25.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code25.cpp; sourceTree = "<group>"; };
 		8E057F902A4B024900EBA6F9 /* code26.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code26.cpp; sourceTree = "<group>"; };
 		8E057F922A4BD65700EBA6F9 /* code27.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code27.cpp; sourceTree = "<group>"; };
 		8E057F942A4C18CA00EBA6F9 /* code28.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code28.cpp; sourceTree = "<group>"; };
 		8E057F962A4C5D6600EBA6F9 /* code29.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code29.cpp; sourceTree = "<group>"; };
 		8E057F982A4D21CB00EBA6F9 /* code30.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code30.cpp; sourceTree = "<group>"; };
-		8E057F9A2A4D5D9200EBA6F9 /* code31.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code31.cpp; sourceTree = "<group>"; };
+		8E057F9A2A4D5D9200EBA6F9 /* codesim_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codesim_1.cpp; sourceTree = "<group>"; };
 		8E17E2E72A5D2FD20095BDBC /* code62.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code62.cpp; sourceTree = "<group>"; };
 		8E17E2E92A5D36BB0095BDBC /* code63.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code63.cpp; sourceTree = "<group>"; };
 		8E17E2EB2A5D4E5B0095BDBC /* code64.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code64.cpp; sourceTree = "<group>"; };
@@ -159,14 +154,23 @@
 			path = Stack_Queue;
 			sourceTree = "<group>";
 		};
-		8E17E30B2A6782030095BDBC /* niuke */ = {
+		8E17E30B2A6782030095BDBC /* nknet */ = {
 			isa = PBXGroup;
 			children = (
 				8E17E30D2A6782400095BDBC /* 汽水瓶.cpp */,
 				8E17E30F2A678FAD0095BDBC /* 明明的随机数.cpp */,
 				8E17E3112A67BBB00095BDBC /* 进制转换.cpp */,
 			);
-			path = niuke;
+			path = nknet;
+			sourceTree = "<group>";
+		};
+		8E17E3132A67C1B80095BDBC /* Simulation */ = {
+			isa = PBXGroup;
+			children = (
+				8E057F9A2A4D5D9200EBA6F9 /* codesim_1.cpp */,
+				8E057F8A2A4AB79500EBA6F9 /* codesim_2.cpp */,
+			);
+			path = Simulation;
 			sourceTree = "<group>";
 		};
 		8E2D1EAB2A5297020061F6B7 /* Bintree */ = {
@@ -228,7 +232,6 @@
 				8E057F942A4C18CA00EBA6F9 /* code28.cpp */,
 				8E057F962A4C5D6600EBA6F9 /* code29.cpp */,
 				8E057F982A4D21CB00EBA6F9 /* code30.cpp */,
-				8E057F9A2A4D5D9200EBA6F9 /* code31.cpp */,
 				8EDEF5652A4D7AE700F46001 /* code32.cpp */,
 				8E9E3A7B2A4E79AE002161A2 /* code33.cpp */,
 				8E9E3A7D2A4E7F31002161A2 /* code34.cpp */,
@@ -252,7 +255,6 @@
 			children = (
 				8E96B1E72A495EF300B53860 /* code21.cpp */,
 				8E057F882A4A7F2600EBA6F9 /* code23.cpp */,
-				8E057F8A2A4AB79500EBA6F9 /* code24.cpp */,
 				8E057F8E2A4AFC7700EBA6F9 /* code25.cpp */,
 				8E057F902A4B024900EBA6F9 /* code26.cpp */,
 			);
@@ -270,8 +272,8 @@
 		8EE9BA5C2A1B83EC00D6DC7C = {
 			isa = PBXGroup;
 			children = (
-				8E17E30B2A6782030095BDBC /* niuke */,
-				8EE9BA672A1B83EC00D6DC7C /* leetcode */,
+				8E17E30B2A6782030095BDBC /* nknet */,
+				8EE9BA672A1B83EC00D6DC7C /* leetco */,
 				8EE9BA662A1B83EC00D6DC7C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -284,9 +286,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		8EE9BA672A1B83EC00D6DC7C /* leetcode */ = {
+		8EE9BA672A1B83EC00D6DC7C /* leetco */ = {
 			isa = PBXGroup;
 			children = (
+				8E17E3132A67C1B80095BDBC /* Simulation */,
 				8E17E30A2A66241B0095BDBC /* Stack_Queue */,
 				8E96B1DE2A4812E000B53860 /* String */,
 				8E96B1DF2A48131200B53860 /* Linklist */,
@@ -297,7 +300,7 @@
 				8E96B1E12A48148300B53860 /* Stack */,
 				8E96B1E02A48140B00B53860 /* Vector */,
 			);
-			path = leetcode;
+			path = leetco;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,13 +360,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E17E3092A6541EA0095BDBC /* codepoint_7.cpp in Sources */,
-				8E17E3102A678FAD0095BDBC /* 明明的随机数.cpp in Sources */,
-				8E17E30E2A6782400095BDBC /* 汽水瓶.cpp in Sources */,
-				8E17E3072A653A270095BDBC /* codepoint_5.cpp in Sources */,
-				8E17E3122A67BBB00095BDBC /* 进制转换.cpp in Sources */,
-				8E17E3082A6541860095BDBC /* codepoint_6.cpp in Sources */,
-				8E17E3062A6271C00095BDBC /* codepoint_1.cpp in Sources */,
+				8E17E3152A67DEAB0095BDBC /* codesim_2.cpp in Sources */,
+				8E17E3142A67D8980095BDBC /* codesim_1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
