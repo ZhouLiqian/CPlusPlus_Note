@@ -11,6 +11,9 @@
 		8E17E3072A653A270095BDBC /* codepoint_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EA67A0F2A4186FF0065C9E8 /* codepoint_5.cpp */; };
 		8E17E3082A6541860095BDBC /* codepoint_6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EA67A112A4199250065C9E8 /* codepoint_6.cpp */; };
 		8E17E3092A6541EA0095BDBC /* codepoint_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EA67A132A41D5AB0065C9E8 /* codepoint_7.cpp */; };
+		8E17E30E2A6782400095BDBC /* 汽水瓶.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E30D2A6782400095BDBC /* 汽水瓶.cpp */; };
+		8E17E3102A678FAD0095BDBC /* 明明的随机数.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E30F2A678FAD0095BDBC /* 明明的随机数.cpp */; };
+		8E17E3122A67BBB00095BDBC /* 进制转换.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E3112A67BBB00095BDBC /* 进制转换.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +52,9 @@
 		8E17E2FE2A60FDD60095BDBC /* codestr_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codestr_2.cpp; sourceTree = "<group>"; };
 		8E17E3002A6128F20095BDBC /* codestr_3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codestr_3.cpp; sourceTree = "<group>"; };
 		8E17E3032A617C790095BDBC /* codelist_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codelist_1.cpp; sourceTree = "<group>"; };
+		8E17E30D2A6782400095BDBC /* 汽水瓶.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "汽水瓶.cpp"; sourceTree = "<group>"; };
+		8E17E30F2A678FAD0095BDBC /* 明明的随机数.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "明明的随机数.cpp"; sourceTree = "<group>"; };
+		8E17E3112A67BBB00095BDBC /* 进制转换.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "进制转换.cpp"; sourceTree = "<group>"; };
 		8E2D1E932A5038F70061F6B7 /* code37.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code37.cpp; sourceTree = "<group>"; };
 		8E2D1EAC2A52973B0061F6B7 /* code38.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code38.cpp; sourceTree = "<group>"; };
 		8E2D1EAE2A53AC8A0061F6B7 /* code39.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code39.cpp; sourceTree = "<group>"; };
@@ -153,6 +159,16 @@
 			path = Stack_Queue;
 			sourceTree = "<group>";
 		};
+		8E17E30B2A6782030095BDBC /* niuke */ = {
+			isa = PBXGroup;
+			children = (
+				8E17E30D2A6782400095BDBC /* 汽水瓶.cpp */,
+				8E17E30F2A678FAD0095BDBC /* 明明的随机数.cpp */,
+				8E17E3112A67BBB00095BDBC /* 进制转换.cpp */,
+			);
+			path = niuke;
+			sourceTree = "<group>";
+		};
 		8E2D1EAB2A5297020061F6B7 /* Bintree */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +270,7 @@
 		8EE9BA5C2A1B83EC00D6DC7C = {
 			isa = PBXGroup;
 			children = (
+				8E17E30B2A6782030095BDBC /* niuke */,
 				8EE9BA672A1B83EC00D6DC7C /* leetcode */,
 				8EE9BA662A1B83EC00D6DC7C /* Products */,
 			);
@@ -341,7 +358,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E17E3092A6541EA0095BDBC /* codepoint_7.cpp in Sources */,
+				8E17E3102A678FAD0095BDBC /* 明明的随机数.cpp in Sources */,
+				8E17E30E2A6782400095BDBC /* 汽水瓶.cpp in Sources */,
 				8E17E3072A653A270095BDBC /* codepoint_5.cpp in Sources */,
+				8E17E3122A67BBB00095BDBC /* 进制转换.cpp in Sources */,
 				8E17E3082A6541860095BDBC /* codepoint_6.cpp in Sources */,
 				8E17E3062A6271C00095BDBC /* codepoint_1.cpp in Sources */,
 			);
