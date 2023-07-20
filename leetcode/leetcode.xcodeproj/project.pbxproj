@@ -51,9 +51,9 @@
 		8E17E30F2A678FAD0095BDBC /* 明明的随机数.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "明明的随机数.cpp"; sourceTree = "<group>"; };
 		8E17E3112A67BBB00095BDBC /* 进制转换.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "进制转换.cpp"; sourceTree = "<group>"; };
 		8E2D1E932A5038F70061F6B7 /* code37.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code37.cpp; sourceTree = "<group>"; };
-		8E2D1EAC2A52973B0061F6B7 /* code38.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code38.cpp; sourceTree = "<group>"; };
-		8E2D1EAE2A53AC8A0061F6B7 /* code39.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code39.cpp; sourceTree = "<group>"; };
-		8E2D1EB02A53BBDA0061F6B7 /* code40.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code40.cpp; sourceTree = "<group>"; };
+		8E2D1EAC2A52973B0061F6B7 /* codesb_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codesb_1.cpp; sourceTree = "<group>"; };
+		8E2D1EAE2A53AC8A0061F6B7 /* codesb_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codesb_2.cpp; sourceTree = "<group>"; };
+		8E2D1EB02A53BBDA0061F6B7 /* codesb_3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codesb_3.cpp; sourceTree = "<group>"; };
 		8E2D1EB22A53C35D0061F6B7 /* code41.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code41.cpp; sourceTree = "<group>"; };
 		8E2D1EB42A5400400061F6B7 /* code42.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code42.cpp; sourceTree = "<group>"; };
 		8E2D1EB62A540A5B0061F6B7 /* code43.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code43.cpp; sourceTree = "<group>"; };
@@ -173,12 +173,12 @@
 			path = Simulation;
 			sourceTree = "<group>";
 		};
-		8E2D1EAB2A5297020061F6B7 /* Bintree */ = {
+		8E2D1EAB2A5297020061F6B7 /* Search_Backtrack */ = {
 			isa = PBXGroup;
 			children = (
-				8E2D1EAC2A52973B0061F6B7 /* code38.cpp */,
-				8E2D1EAE2A53AC8A0061F6B7 /* code39.cpp */,
-				8E2D1EB02A53BBDA0061F6B7 /* code40.cpp */,
+				8E2D1EAC2A52973B0061F6B7 /* codesb_1.cpp */,
+				8E2D1EAE2A53AC8A0061F6B7 /* codesb_2.cpp */,
+				8E2D1EB02A53BBDA0061F6B7 /* codesb_3.cpp */,
 				8E2D1EB22A53C35D0061F6B7 /* code41.cpp */,
 				8E2D1EB42A5400400061F6B7 /* code42.cpp */,
 				8E2D1EB62A540A5B0061F6B7 /* code43.cpp */,
@@ -194,7 +194,7 @@
 				8E2D1EE52A57FFE90061F6B7 /* code54.cpp */,
 				8E17E2E72A5D2FD20095BDBC /* code62.cpp */,
 			);
-			path = Bintree;
+			path = Search_Backtrack;
 			sourceTree = "<group>";
 		};
 		8E96B1DE2A4812E000B53860 /* String */ = {
@@ -295,7 +295,7 @@
 				8E96B1DF2A48131200B53860 /* Linklist */,
 				8E17E3052A62709B0095BDBC /* Double_pointer */,
 				8E17E2F32A5E55780095BDBC /* Dynamic_program */,
-				8E2D1EAB2A5297020061F6B7 /* Bintree */,
+				8E2D1EAB2A5297020061F6B7 /* Search_Backtrack */,
 				8E96B1E22A4814A700B53860 /* Queue */,
 				8E96B1E12A48148300B53860 /* Stack */,
 				8E96B1E02A48140B00B53860 /* Vector */,

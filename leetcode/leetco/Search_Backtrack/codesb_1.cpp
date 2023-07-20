@@ -16,6 +16,7 @@ using namespace::std;
  *     TreeNode *right;
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
+ * 解法：层序遍历
 */
 
 struct TreeNode{
@@ -30,7 +31,9 @@ public:
     vector<int> levelOrder(TreeNode* root) {
         vector<int> data_tree;
         deque<TreeNode*> s;
-        if(root)
+        if(!root)
+            return data_tree;
+        else
             s.push_back(root);
         while (!s.empty()) {
             root = s.front();
