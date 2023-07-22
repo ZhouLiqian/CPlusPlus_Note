@@ -7,7 +7,7 @@
 #include <deque>
 using namespace::std;
 
-/*请完成一个函数，输入一个二叉树，该函数输出它的镜像*/
+/*请完成一个函数，输入一个二叉树，该函数输出它的镜像 题解：深度优先搜索*/
 
 struct TreeNode{
     int val;
@@ -15,10 +15,11 @@ struct TreeNode{
     TreeNode *right;
     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
 };
-//递归
-class Solution_1 {
+
+class Solution {
 public:
-    TreeNode* mirrorTree(TreeNode* root) {
+    //方法一：递归
+    TreeNode* mirrorTree_1(TreeNode* root) {
         if(root == nullptr)
             return nullptr;
         swap(root -> left, root -> right);
@@ -26,11 +27,9 @@ public:
         mirrorTree(root -> right);
         return root;
     }
-};
-//迭代
-class Solution_2 {
-public:
-    TreeNode* mirrorTree(TreeNode* root) {
+    
+    //方法二：迭代
+    TreeNode* mirrorTree_2(TreeNode* root) {
         deque<TreeNode*> q;
         if(!root)
             return root;

@@ -17,6 +17,7 @@ using namespace::std;
   *     TreeNode *right;
   *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
   * };
+  题解：深度优先搜索
 */
 
 struct TreeNode{
@@ -28,23 +29,15 @@ struct TreeNode{
 
 class Solution {
 public:
-    bool is_contain(TreeNode* A, TreeNode* B){
-        if(B == NULL)
-            return true;
-        if(A == NULL)
-            return false;
-        if(A -> val == B -> val)
-            return is_contain(A -> left, B -> left) && is_contain(A -> right, B -> right);
-        else
-            return false;
+    bool recur(TreeNode* A, TreeNode* B){
+        if(!B) return true;
+        if(!A || A -> val != B -> val) return false;
+        return recur(A -> left, B -> left) && recur(A -> right, B -> right);
     }
     bool isSubStructure(TreeNode* A, TreeNode* B) {
-        if(A == NULL || B == NULL)
-            return false;
-        
-        if(A -> val == B -> val && is_contain(A, B))
-            return true;
-        else
-            return isSubStructure(A -> left, B) || isSubStructure(A -> right, B);
+        if(!B || !A) return false;
+        //先序遍历
+        //判断包含
+        return recur(A, B) || isSubStructure(A -> left, B) || isSubStructure(A -> right, B);
     }
 };

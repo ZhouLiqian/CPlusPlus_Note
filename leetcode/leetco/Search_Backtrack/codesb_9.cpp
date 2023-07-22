@@ -17,6 +17,7 @@ using namespace::std;
   *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
   *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
   * };
+  题解：回溯算法
 */
 
 struct TreeNode{
@@ -30,30 +31,22 @@ struct TreeNode{
 
 class Solution {
 public:
-    vector<vector<int>> ans;
-    vector<int> path;
-    vector<vector<int>> pathSum(TreeNode* root, int target) {
-        if(!root) return ans;
-        path.push_back(root -> val);
-        //递归函数
-        dfs(root, ans, path, target - root -> val);
-        return ans;
+    vector<vector<int>> arr;
+    vector<int> res;
+    void backtrack(TreeNode* root, int target){
+        if(!root) return;
+        res.push_back(root -> val);
+        target -= root -> val;
+        if(target == 0 && root -> left == nullptr && root -> right == nullptr)
+            arr.push_back(res);
+        backtrack(root -> left, target);
+        backtrack(root -> right, target);
+        res.pop_back();
     }
-    void dfs(TreeNode *cur, vector<vector<int>>& ans, vector<int>& path, int target){
-        if(target == 0 && !cur -> left && !cur -> right){
-            ans.push_back(path);
-            return;
-        }
-        if(cur -> left){
-            path.push_back(cur -> left -> val);
-            dfs(cur -> left, ans, path, target - cur -> left -> val);
-            path.pop_back();
-        }
-        if(cur -> right){
-            path.push_back(cur -> right -> val);
-            dfs(cur -> right, ans, path, target - cur -> right -> val);
-            path.pop_back();
-        }
+    vector<vector<int>> pathSum(TreeNode* root, int target) {
+        if(!root) return {};
+        backtrack(root, target);
+        return arr;
     }
 };
 
