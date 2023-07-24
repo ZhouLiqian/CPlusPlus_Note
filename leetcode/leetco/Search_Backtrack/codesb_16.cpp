@@ -18,7 +18,7 @@ struct TreeNode{
 
 class Solution {
 public:
-    //建立父子节点字典
+    //方法一：建立父子节点字典
     unordered_map<int, TreeNode*> dict;
     unordered_map<int, bool> che;
     void dfs(TreeNode *root){
@@ -31,7 +31,6 @@ public:
             dfs(root -> right);
         }
     }
-    //字典查找
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
         if(!root)
             return root;
@@ -46,5 +45,16 @@ public:
             q = dict[q -> val];
         }
         return nullptr;
+    }
+    
+    //方法二：先序遍历
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+        if(root == NULL || root == p || root == q)
+            return root;
+        TreeNode* left = lowestCommonAncestor(root -> left, p, q);
+        TreeNode* right = lowestCommonAncestor(root -> right, p, q);
+        if(left == NULL) return right;
+        if(right == NULL) return left;
+        return root;
     }
 };

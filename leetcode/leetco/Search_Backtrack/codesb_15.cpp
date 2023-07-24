@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace::std;
 
-/*给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先*/
+/*给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先 解法：深度优先搜索*/
 
 struct TreeNode{
     int val;
@@ -17,6 +17,7 @@ struct TreeNode{
 
 class Solution {
 public:
+    //方法一：迭代
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
         TreeNode *ptr = root;
         while (true) {
@@ -28,5 +29,14 @@ public:
                 break;
         }
         return ptr;
+    }
+    //方法二：递归
+    TreeNode* lowestCommonAncestor_2(TreeNode* root, TreeNode* p, TreeNode* q) {
+        if(!root) return root;
+        if(p -> val < root -> val && q -> val < root -> val)
+            return lowestCommonAncestor(root -> left, p, q);
+        else if(p -> val > root -> val && q -> val > root -> val)
+            return lowestCommonAncestor(root -> right, p, q);
+        return root;
     }
 };

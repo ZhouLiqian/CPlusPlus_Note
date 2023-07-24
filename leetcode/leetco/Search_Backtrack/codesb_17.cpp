@@ -29,7 +29,6 @@ public:
             rserialize(root->right, str);
         }
     }
-
     string serialize(TreeNode* root) {
         string ret;
         rserialize(root, ret);
