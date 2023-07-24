@@ -7,7 +7,10 @@
 #include <stack>
 using namespace::std;
 
-/*输入一棵二叉搜索树，将该二叉搜索树转换成一个排序的循环双向链表。要求不能创建任何新的节点，只能调整树中节点指针的指向*/
+/*
+ 输入一棵二叉搜索树，将该二叉搜索树转换成一个排序的循环双向链表。要求不能创建任何新的节点，只能调整树中节点指针的指向
+ 解法：中序遍历/深度优先搜索
+*/
 
 // Definition for a Node.
 class Node {
@@ -32,6 +35,7 @@ class Solution {
 public:
     Node* head = nullptr;
     Node* pre = nullptr;
+    //方法一：递归
     Node* treeToDoublyList(Node* root) {
         if(!root) return root;
         dfs(root);
@@ -39,7 +43,6 @@ public:
         pre -> right = head;
         return head;
     }
-    //中序遍历
     void dfs(Node *root){
         if(!root) return;
         dfs(root -> left);
@@ -51,7 +54,8 @@ public:
         pre = root;
         dfs(root -> right);
     }
-    //非递归
+    
+    //方法二：迭代
     void dfs_2(Node *root){
         stack<Node*> s;
         while (root || !s.empty()) {
