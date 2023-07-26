@@ -9,12 +9,13 @@ using namespace::std;
 /*
  在一个 n * m 的二维数组中，每一行都按照从左到右非递减的顺序排序，每一列都按照从上到下非递减的顺序排序
  请完成一个高效的函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数
- 解:双指针
+ 解:双指针/二分查找
 */
 
 class Solution {
 public:
-    bool findNumberIn2DArray(vector<vector<int>>& matrix, int target) {
+    //标志数
+    bool findNumberIn2DArray_1(vector<vector<int>>& matrix, int target) {
         if(matrix.empty())
             return false;
         int left = 0, right = int(matrix[0].size()) - 1;
@@ -25,6 +26,17 @@ public:
                 left++;
             else
                 right--;
+        }
+        return false;
+    }
+    
+    //二分查找
+    bool findNumberIn2DArray_2(vector<vector<int>>& matrix, int target){
+        for(auto num : matrix){
+            auto low = lower_bound(num.begin(), num.end(), target);
+            if(low != num.end() && *low == target){
+                return true;
+            }
         }
         return false;
     }
