@@ -6,7 +6,11 @@
 #include <iostream>
 using namespace::std;
 
-/*在数组中的两个数字，如果前面一个数字大于后面的数字，则这两个数字组成一个逆序对。输入一个数组，求出这个数组中的逆序对的总数*/
+/*
+ 在数组中的两个数字，如果前面一个数字大于后面的数字，则这两个数字组成一个逆序对。
+ 输入一个数组，求出这个数组中的逆序对的总数
+ 解法：暴力遍历/分治算法
+*/
 
 class Solution {
 public:
@@ -21,6 +25,7 @@ public:
         }
         return count;
     }
+    
     //分治算法
     int reversePairs_2(vector<int>& nums){
         vector<int> tmp(nums.size());
