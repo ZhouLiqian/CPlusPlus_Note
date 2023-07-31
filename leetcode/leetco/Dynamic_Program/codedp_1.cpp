@@ -6,7 +6,7 @@
 #include <iostream>
 using namespace::std;
 
-/*写一个函数，输入 n ，求斐波那契（Fibonacci）数列的第 n 项（即 F(N)）*/
+/*写一个函数，输入 n ，求斐波那契（Fibonacci）数列的第 n 项（即 F(N)）解法：动态规划*/
 
 class Solution {
 public:

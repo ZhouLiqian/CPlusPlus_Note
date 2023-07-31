@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E262E362A739766006033B5 /* codedc_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2E72A5D2FD20095BDBC /* codedc_1.cpp */; };
-		8E262E372A739766006033B5 /* codedc_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2D1EED2A59440D0061F6B7 /* codedc_2.cpp */; };
-		8E262E382A739766006033B5 /* codedc_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2D1EE92A5908890061F6B7 /* codedc_3.cpp */; };
-		8E262E392A739766006033B5 /* codedc_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2D1EEB2A5932240061F6B7 /* codedc_4.cpp */; };
-		8E262E3A2A739766006033B5 /* codedc_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2E92A5D36BB0095BDBC /* codedc_5.cpp */; };
+		8E262E3C2A77AC58006033B5 /* codedp_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2F42A5E558F0095BDBC /* codedp_1.cpp */; };
+		8E262E3D2A77AC58006033B5 /* codedp_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2F62A5F9DAC0095BDBC /* codedp_2.cpp */; };
+		8E262E3E2A77AC58006033B5 /* codedp_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2F82A5FA2D30095BDBC /* codedp_3.cpp */; };
+		8E262E3F2A77AC58006033B5 /* codedp_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2FA2A60237B0095BDBC /* codedp_4.cpp */; };
+		8E262E402A77AC58006033B5 /* codedp_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E262E3B2A77AC0D006033B5 /* codedp_5.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -53,6 +53,7 @@
 		8E17E30D2A6782400095BDBC /* 汽水瓶.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "汽水瓶.cpp"; sourceTree = "<group>"; };
 		8E17E30F2A678FAD0095BDBC /* 明明的随机数.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "明明的随机数.cpp"; sourceTree = "<group>"; };
 		8E17E3112A67BBB00095BDBC /* 进制转换.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "进制转换.cpp"; sourceTree = "<group>"; };
+		8E262E3B2A77AC0D006033B5 /* codedp_5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codedp_5.cpp; sourceTree = "<group>"; };
 		8E2D1E932A5038F70061F6B7 /* codesa_6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codesa_6.cpp; sourceTree = "<group>"; };
 		8E2D1EAC2A52973B0061F6B7 /* codesb_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codesb_1.cpp; sourceTree = "<group>"; };
 		8E2D1EAE2A53AC8A0061F6B7 /* codesb_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codesb_2.cpp; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 				8E17E2F62A5F9DAC0095BDBC /* codedp_2.cpp */,
 				8E17E2F82A5FA2D30095BDBC /* codedp_3.cpp */,
 				8E17E2FA2A60237B0095BDBC /* codedp_4.cpp */,
+				8E262E3B2A77AC0D006033B5 /* codedp_5.cpp */,
 			);
 			path = Dynamic_Program;
 			sourceTree = "<group>";
@@ -379,11 +381,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E262E362A739766006033B5 /* codedc_1.cpp in Sources */,
-				8E262E372A739766006033B5 /* codedc_2.cpp in Sources */,
-				8E262E382A739766006033B5 /* codedc_3.cpp in Sources */,
-				8E262E392A739766006033B5 /* codedc_4.cpp in Sources */,
-				8E262E3A2A739766006033B5 /* codedc_5.cpp in Sources */,
+				8E262E3C2A77AC58006033B5 /* codedp_1.cpp in Sources */,
+				8E262E3D2A77AC58006033B5 /* codedp_2.cpp in Sources */,
+				8E262E3E2A77AC58006033B5 /* codedp_3.cpp in Sources */,
+				8E262E3F2A77AC58006033B5 /* codedp_4.cpp in Sources */,
+				8E262E402A77AC58006033B5 /* codedp_5.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
