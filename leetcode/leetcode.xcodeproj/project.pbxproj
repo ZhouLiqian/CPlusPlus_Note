@@ -12,6 +12,11 @@
 		8E262E3E2A77AC58006033B5 /* codedp_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2F82A5FA2D30095BDBC /* codedp_3.cpp */; };
 		8E262E3F2A77AC58006033B5 /* codedp_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2FA2A60237B0095BDBC /* codedp_4.cpp */; };
 		8E262E402A77AC58006033B5 /* codedp_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E262E3B2A77AC0D006033B5 /* codedp_5.cpp */; };
+		8E262E422A78D90F006033B5 /* codedp_6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E262E412A78D90F006033B5 /* codedp_6.cpp */; };
+		8E262E442A78E9D0006033B5 /* codedp_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E262E432A78E9D0006033B5 /* codedp_7.cpp */; };
+		8E262E462A790468006033B5 /* codedp_8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E262E452A790468006033B5 /* codedp_8.cpp */; };
+		8E262E482A7905B6006033B5 /* codedp_9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E262E472A7905B6006033B5 /* codedp_9.cpp */; };
+		8E262E4A2A790C1C006033B5 /* codedp_10.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E262E492A790C1C006033B5 /* codedp_10.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +59,11 @@
 		8E17E30F2A678FAD0095BDBC /* 明明的随机数.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "明明的随机数.cpp"; sourceTree = "<group>"; };
 		8E17E3112A67BBB00095BDBC /* 进制转换.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "进制转换.cpp"; sourceTree = "<group>"; };
 		8E262E3B2A77AC0D006033B5 /* codedp_5.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codedp_5.cpp; sourceTree = "<group>"; };
+		8E262E412A78D90F006033B5 /* codedp_6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codedp_6.cpp; sourceTree = "<group>"; };
+		8E262E432A78E9D0006033B5 /* codedp_7.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codedp_7.cpp; sourceTree = "<group>"; };
+		8E262E452A790468006033B5 /* codedp_8.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codedp_8.cpp; sourceTree = "<group>"; };
+		8E262E472A7905B6006033B5 /* codedp_9.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codedp_9.cpp; sourceTree = "<group>"; };
+		8E262E492A790C1C006033B5 /* codedp_10.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codedp_10.cpp; sourceTree = "<group>"; };
 		8E2D1E932A5038F70061F6B7 /* codesa_6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codesa_6.cpp; sourceTree = "<group>"; };
 		8E2D1EAC2A52973B0061F6B7 /* codesb_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codesb_1.cpp; sourceTree = "<group>"; };
 		8E2D1EAE2A53AC8A0061F6B7 /* codesb_2.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codesb_2.cpp; sourceTree = "<group>"; };
@@ -127,6 +137,11 @@
 				8E17E2F82A5FA2D30095BDBC /* codedp_3.cpp */,
 				8E17E2FA2A60237B0095BDBC /* codedp_4.cpp */,
 				8E262E3B2A77AC0D006033B5 /* codedp_5.cpp */,
+				8E262E412A78D90F006033B5 /* codedp_6.cpp */,
+				8E262E432A78E9D0006033B5 /* codedp_7.cpp */,
+				8E262E452A790468006033B5 /* codedp_8.cpp */,
+				8E262E472A7905B6006033B5 /* codedp_9.cpp */,
+				8E262E492A790C1C006033B5 /* codedp_10.cpp */,
 			);
 			path = Dynamic_Program;
 			sourceTree = "<group>";
@@ -381,9 +396,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E262E442A78E9D0006033B5 /* codedp_7.cpp in Sources */,
 				8E262E3C2A77AC58006033B5 /* codedp_1.cpp in Sources */,
 				8E262E3D2A77AC58006033B5 /* codedp_2.cpp in Sources */,
+				8E262E4A2A790C1C006033B5 /* codedp_10.cpp in Sources */,
+				8E262E482A7905B6006033B5 /* codedp_9.cpp in Sources */,
+				8E262E462A790468006033B5 /* codedp_8.cpp in Sources */,
 				8E262E3E2A77AC58006033B5 /* codedp_3.cpp in Sources */,
+				8E262E422A78D90F006033B5 /* codedp_6.cpp in Sources */,
 				8E262E3F2A77AC58006033B5 /* codedp_4.cpp in Sources */,
 				8E262E402A77AC58006033B5 /* codedp_5.cpp in Sources */,
 			);
