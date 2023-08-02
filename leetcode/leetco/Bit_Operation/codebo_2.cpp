@@ -6,18 +6,18 @@
 #include <iostream>
 using namespace::std;
 
-/*写一个函数，求两个整数之和，要求在函数体内不得使用 “+”、“-”、“*”、“/” 四则运算符号*/
+/*写一个函数，求两个整数之和，要求在函数体内不得使用 “+”、“-”、“*”、“/” 四则运算符号 解法：位运算*/
 
 class Solution {
 public:
     // &+^
     int add(int a, int b) {
         while (b) {
-            //进位
             int carry = a & b;
             //本位
             a = a ^ b;
-            b = unsigned(carry) << 1;
+            //进位
+            b = (unsigned)carry << 1;
         }
         return a;
     }

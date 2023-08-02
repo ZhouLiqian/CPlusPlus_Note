@@ -33,9 +33,22 @@ public:
         {
             hash[s[i]]++;
             while (hash[s[i]] > 1) {hash[s[j]]--; j++;}
-            ret = max(ret,i-j+1);
+            ret = max(ret, i - j + 1);
         }
         return ret;
     }
+    
+    //自方法
+    int lengthOfLongestSubstring_3(string s){
+        if(s.empty()) return 0;
+        unordered_map<char, int> hash_map;
+        int len = 0, temp = 0;
+        for(int i = 0; i < s.size(); i++){
+            if(hash_map.count(s[i]) == 0) temp++;
+            else temp = min(temp + 1, i - hash_map[s[i]]);
+            hash_map[s[i]] = i;
+            len = max(len, temp);
+        }
+        return len;
+    }
 };
-
