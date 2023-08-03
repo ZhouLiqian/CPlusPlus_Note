@@ -7,7 +7,7 @@
 #include <set>
 using namespace::std;
 
-/*数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字*/
+/*数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字 解法：排序/摩尔投票/哈希表*/
 
 class Solution {
 public:

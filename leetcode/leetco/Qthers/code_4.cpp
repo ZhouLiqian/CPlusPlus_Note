@@ -18,12 +18,10 @@ using namespace::std;
   * int param_4 = obj->getMin();
 */
 
-/*方法一
-class MinStack {
+//方法一-数组
+class MinStack_1{
 public:
-    MinStack() {
-
-    }
+    MinStack_1(){}
     
     void push(int x) {
         stack.push(x);
@@ -63,12 +61,13 @@ public:
     }
 private:
     stack<int> stack;
-};*/
+};
 
 //方法二-维护两个栈
-class MinStack{
+class MinStack_2{
 public:
-    MinStack(){}
+    MinStack_2(){}
+    
     void push(int x){
         if(sta.empty() && min.empty())
         {
@@ -81,12 +80,14 @@ public:
             min.push(std::min(min.top(), x));
         }
     }
+    
     void pop(){
         if(!sta.empty() && !min.empty()){
             sta.pop();
             min.pop();
         }
     }
+    
     int top(){
         if(!sta.empty()){
             return sta.top();
@@ -96,6 +97,7 @@ public:
             return NULL;
         }
     }
+    
     int getMin(){
         if(!min.empty()){
             return min.top();
