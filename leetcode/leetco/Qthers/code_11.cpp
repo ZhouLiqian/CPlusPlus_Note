@@ -1,68 +1,36 @@
-//  code20.cpp
+//  code28.cpp
 //  leetcode
-//  用队列实现栈
-//  Created by Qian on 6/26/23.
+//  分割等和子集
+//  Created by Qian on 6/28/23.
 
 #include <iostream>
-#include <queue>
 using namespace::std;
 
-/*请你仅使用两个队列实现一个后入先出（LIFO）的栈，并支持普通栈的全部四种操作（push、top、pop 和 empty）*/
-/*
- * Your MyStack object will be instantiated and called as such:
- * MyStack* obj = new MyStack();
- * obj->push(x);
- * int param_2 = obj->pop();
- * int param_3 = obj->top();
- * bool param_4 = obj->empty();
-*/
+/*给定一个非空的正整数数组 nums ，请判断能否将这些数字分成元素和相等的两部分*/
 
-class MyStack {
+class Solution {
 public:
-    MyStack() {}
-
-    void push(int x) {
-        qu_1.push(x);
-    }
-
-    int pop() {
-        //cout << qu_1.size() <<endl;
-        if(qu_1.empty())
-            return NULL;
-        while (qu_1.size() > 1) {
-            qu_2.push(qu_1.front());
-            qu_1.pop();
+    bool canPartition(vector<int>& nums) {
+        int sum = 0;
+        for(int i = 0; i < nums.size(); i++){
+            sum += nums[i];
         }
-        int element_pop = 0;
-        if(qu_1.size() == 1){
-            element_pop = qu_1.front();
-            qu_1.pop();
-        }
-        //恢复原队列
-        while (!qu_2.empty()) {
-            qu_1.push(qu_2.front());
-            qu_2.pop();
-        }
-        cout <<qu_1.size() << endl;
-        return element_pop;
-    }
-
-    int top() {
-        if(qu_1.empty())
-            return NULL;
-        return qu_1.back();
-    }
-
-    bool empty() {
-        if (qu_1.empty() && qu_2.empty()) {
-            return true;
-        }
-        else{
+        if(sum % 2 != 0)
             return false;
+        sum = sum / 2;
+        //动态规划
+        vector<vector<bool>> f(nums.size() + 1, vector<bool>(sum + 1, false));
+        f[0][0] = true;
+        for(int j = 1; j <= nums.size(); j++){
+            for(int k = 1; k <= sum; k++){
+                if(k >= nums[j - 1]){
+                    f[j][k] = f[j - 1][k - nums[j - 1]] | f[j - 1][k];
+                }
+                else{
+                    f[j][k] = f[j - 1][k];
+                }
+            }
         }
+        return f[nums.size()][sum];
     }
-private:
-    queue<int> qu_1;
-    queue<int> qu_2;
 };
-

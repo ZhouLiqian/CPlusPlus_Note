@@ -1,36 +1,56 @@
-//  code28.cpp
+//  code29.cpp
 //  leetcode
-//  分割等和子集
+//  三合一
 //  Created by Qian on 6/28/23.
 
 #include <iostream>
+#include <vector>
 using namespace::std;
 
-/*给定一个非空的正整数数组 nums ，请判断能否将这些数字分成元素和相等的两部分*/
+/*
+ 三合一。描述如何只用一个数组来实现三个栈
+ 实现push(stackNum, value)、pop(stackNum)、isEmpty(stackNum)、peek(stackNum)方法
+ stackNum表示栈下标，value表示压入的值
+ 解:二维数组
+*/
 
-class Solution {
+class TripleInOne {
 public:
-    bool canPartition(vector<int>& nums) {
-        int sum = 0;
-        for(int i = 0; i < nums.size(); i++){
-            sum += nums[i];
+    //初始化二维数组
+    vector<vector<int>> stack = vector<vector<int>> (3, vector<int> (0, 0));
+    int maxSize = 0;
+    
+    //定义各栈尺寸
+    TripleInOne(int stackSize) {
+        maxSize = stackSize;
+    }
+    
+    //压入元素
+    void push(int stackNum, int value) {
+        if(stack[stackNum].size() >= maxSize) return;
+        else stack[stackNum].push_back(value);
+    }
+    
+    //删除栈顶
+    int pop(int stackNum) {
+        if(stack[stackNum].empty()) return -1;
+        else {
+            int temp = stack[stackNum].back();
+            stack[stackNum].pop_back();
+            return temp;
         }
-        if(sum % 2 != 0)
-            return false;
-        sum = sum / 2;
-        //动态规划
-        vector<vector<bool>> f(nums.size() + 1, vector<bool>(sum + 1, false));
-        f[0][0] = true;
-        for(int j = 1; j <= nums.size(); j++){
-            for(int k = 1; k <= sum; k++){
-                if(k >= nums[j - 1]){
-                    f[j][k] = f[j - 1][k - nums[j - 1]] | f[j - 1][k];
-                }
-                else{
-                    f[j][k] = f[j - 1][k];
-                }
-            }
+    }
+    
+    //栈顶元素
+    int peek(int stackNum) {
+        if(stack[stackNum].empty()) return -1;
+        else {
+            return stack[stackNum].back();
         }
-        return f[nums.size()][sum];
+    }
+    
+    //判断空
+    bool isEmpty(int stackNum) {
+        return stack[stackNum].empty();
     }
 };

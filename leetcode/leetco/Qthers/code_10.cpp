@@ -1,37 +1,68 @@
-//  code27.cpp
+//  code20.cpp
 //  leetcode
-//  和为s的连续正数序列
-//  Created by Qian on 6/28/23.
+//  用队列实现栈
+//  Created by Qian on 6/26/23.
 
 #include <iostream>
-#include <vector>
+#include <queue>
 using namespace::std;
 
+/*请你仅使用两个队列实现一个后入先出（LIFO）的栈，并支持普通栈的全部四种操作（push、top、pop 和 empty）*/
 /*
- 输入一个正整数 target ，输出所有和为 target 的连续正整数序列（至少含有两个数)
- 序列内的数字由小到大排列，不同序列按照首个数字从小到大排列
- 解:滑动窗口
+ * Your MyStack object will be instantiated and called as such:
+ * MyStack* obj = new MyStack();
+ * obj->push(x);
+ * int param_2 = obj->pop();
+ * int param_3 = obj->top();
+ * bool param_4 = obj->empty();
 */
 
-class Solution {
+class MyStack {
 public:
-    vector<vector<int>> findContinuousSequence(int target) {
-        vector<vector<int>> com_vector;
-        for(int sum = 0, left = 1, right = 1; right < target; right++){
-            sum = sum + right;
-            //求和
-            while (sum > target) {
-                sum = sum - left;
-                left++;
-            }
-            if(sum == target){
-                vector<int> ent_vector;
-                for(int value = left; value <= right; value++){
-                    ent_vector.push_back(value);
-                }
-                com_vector.push_back(ent_vector);
-            }
-        }
-        return com_vector;
+    MyStack() {}
+
+    void push(int x) {
+        qu_1.push(x);
     }
+
+    int pop() {
+        //cout << qu_1.size() <<endl;
+        if(qu_1.empty())
+            return NULL;
+        while (qu_1.size() > 1) {
+            qu_2.push(qu_1.front());
+            qu_1.pop();
+        }
+        int element_pop = 0;
+        if(qu_1.size() == 1){
+            element_pop = qu_1.front();
+            qu_1.pop();
+        }
+        //恢复原队列
+        while (!qu_2.empty()) {
+            qu_1.push(qu_2.front());
+            qu_2.pop();
+        }
+        cout <<qu_1.size() << endl;
+        return element_pop;
+    }
+
+    int top() {
+        if(qu_1.empty())
+            return NULL;
+        return qu_1.back();
+    }
+
+    bool empty() {
+        if (qu_1.empty() && qu_2.empty()) {
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+private:
+    queue<int> qu_1;
+    queue<int> qu_2;
 };
+

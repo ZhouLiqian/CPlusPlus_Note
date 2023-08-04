@@ -1,56 +1,55 @@
-//  code29.cpp
+//  code30.cpp
 //  leetcode
-//  三合一
-//  Created by Qian on 6/28/23.
+//  无法吃午餐的学生数量
+//  Created by Qian on 6/29/23.
 
 #include <iostream>
-#include <vector>
+#include <stack>
+#include <queue>
 using namespace::std;
 
 /*
- 三合一。描述如何只用一个数组来实现三个栈
- 实现push(stackNum, value)、pop(stackNum)、isEmpty(stackNum)、peek(stackNum)方法
- stackNum表示栈下标，value表示压入的值
- 解:二维数组
+ 学校的自助午餐提供圆形和方形的三明治，分别用数字 0 和 1 表示
+ 所有学生站在一个队列里，每个学生要么喜欢圆形的要么喜欢方形的
+ 餐厅里三明治的数量与学生的数量相同
+ 
+ 所有三明治都放在一个栈里，每一轮：如果队列最前面的学生喜欢栈顶的三明治，那么会拿走它并离开队列
+ 否则，这名学生会放弃这个三明治并回到队列的尾部, 这个过程会一直持续到队列里所有学生都不喜欢栈顶的三明治为止
+
+ 给你两个整数数组 students 和 sandwiches
+ 其中 sandwiches[i] 是栈里面第 i​​​​​​ 个三明治的类型（i = 0 是栈的顶部）
+ students[j] 是初始队列里第 j​​​​​​ 名学生对三明治的喜好（j = 0 是队列的最开始位置）
+ 请你返回无法吃午餐的学生数量
 */
 
-class TripleInOne {
+class Solution {
 public:
-    //初始化二维数组
-    vector<vector<int>> stack = vector<vector<int>> (3, vector<int> (0, 0));
-    int maxSize = 0;
-    
-    //定义各栈尺寸
-    TripleInOne(int stackSize) {
-        maxSize = stackSize;
-    }
-    
-    //压入元素
-    void push(int stackNum, int value) {
-        if(stack[stackNum].size() >= maxSize) return;
-        else stack[stackNum].push_back(value);
-    }
-    
-    //删除栈顶
-    int pop(int stackNum) {
-        if(stack[stackNum].empty()) return -1;
-        else {
-            int temp = stack[stackNum].back();
-            stack[stackNum].pop_back();
-            return temp;
+    int countStudents(vector<int>& students, vector<int>& sandwiches) {
+        int count = 0;//记录连续未吃到午餐的学生数量
+        for(int i = 0; i < students.size(); i++){
+            student_queue.push(students[i]);
         }
-    }
-    
-    //栈顶元素
-    int peek(int stackNum) {
-        if(stack[stackNum].empty()) return -1;
-        else {
-            return stack[stackNum].back();
+        reverse(sandwiches.begin(), sandwiches.end());
+        for(int j = 0; j < sandwiches.size(); j++){
+            sandwiche_stack.push(sandwiches[j]);
         }
+        while (1) {
+            if(!sandwiche_stack.empty() && !student_queue.empty() && sandwiche_stack.top() == student_queue.front()){
+                sandwiche_stack.pop();
+                student_queue.pop();
+                count = 0;
+            }
+            if(!student_queue.empty() && sandwiche_stack.top() != student_queue.front()){
+                student_queue.push(student_queue.front());
+                student_queue.pop();
+                count += 1;
+            }
+            if(student_queue.empty() || count >= student_queue.size())
+                break;
+        }
+        return int(student_queue.size());
     }
-    
-    //判断空
-    bool isEmpty(int stackNum) {
-        return stack[stackNum].empty();
-    }
+private:
+    stack<int> sandwiche_stack;
+    queue<int> student_queue;
 };
