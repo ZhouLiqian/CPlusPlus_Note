@@ -11,13 +11,21 @@ using namespace::std;
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
+        /*
+         状态：股票时间
+         选择：是否选择当前股票
+        */
         if(prices.empty()) return 0;
+        unsigned long N = prices.size();
+        //初始化
+        int dp[N + 1];
+        for(int k = 0; k <= N; k++) dp[k] = 0;
         int min_price = prices[0];
-        int profit = 0;
-        for(int i = 0; i < prices.size(); i++){
-            min_price = min(min_price, prices[i]);
-            profit = max(profit, prices[i] - min_price);
+        //做选择
+        for(int i = 1; i <= N; i++){
+            min_price = min(min_price, prices[i - 1]);
+            dp[i] = max(dp[i - 1], prices[i - 1] - min_price);
         }
-        return profit;
+        return dp[N];
     }
 };

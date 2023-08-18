@@ -7,6 +7,10 @@ using namespace::std;
 
 //使用动态规划求解0-1背包问题
 int knapsack(int num, int capacity, int weight[], int values[]){
+    /*
+     状态：背包容量capacity，可选物品num
+     选择：装进背包/不装进背包
+    */
     int space, sub_cap, total_value[num + 1][capacity + 1];
     //初始化
     for(int i = 0; i <= num; i++)

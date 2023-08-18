@@ -11,6 +11,17 @@
 		8E1131EF2A85E78C0091FCD1 /* 明明的随机数.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E30F2A678FAD0095BDBC /* 明明的随机数.cpp */; };
 		8E1131F02A85E78C0091FCD1 /* 进制转换.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E3112A67BBB00095BDBC /* 进制转换.cpp */; };
 		8E1131F12A85E78C0091FCD1 /* 背包问题.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E1131ED2A85E75B0091FCD1 /* 背包问题.cpp */; };
+		8EDE25492A8F8C52009DFF23 /* codedp_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2F42A5E558F0095BDBC /* codedp_1.cpp */; };
+		8EDE254A2A8F8C52009DFF23 /* codedp_2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2F62A5F9DAC0095BDBC /* codedp_2.cpp */; };
+		8EDE254B2A8F8C52009DFF23 /* codedp_3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2F82A5FA2D30095BDBC /* codedp_3.cpp */; };
+		8EDE254C2A8F8C52009DFF23 /* codedp_4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2FA2A60237B0095BDBC /* codedp_4.cpp */; };
+		8EDE254D2A8F8C52009DFF23 /* codedp_5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E262E3B2A77AC0D006033B5 /* codedp_5.cpp */; };
+		8EDE254E2A8F8C52009DFF23 /* codedp_6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E262E412A78D90F006033B5 /* codedp_6.cpp */; };
+		8EDE254F2A8F8C52009DFF23 /* codedp_7.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E262E432A78E9D0006033B5 /* codedp_7.cpp */; };
+		8EDE25502A8F8C52009DFF23 /* codedp_8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E262E452A790468006033B5 /* codedp_8.cpp */; };
+		8EDE25512A8F8C52009DFF23 /* codedp_9.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E262E472A7905B6006033B5 /* codedp_9.cpp */; };
+		8EDE25522A8F8C52009DFF23 /* codedp_10.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E262E492A790C1C006033B5 /* codedp_10.cpp */; };
+		8EDE25542A8F9824009DFF23 /* 小红的日常分享.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE25532A8F9824009DFF23 /* 小红的日常分享.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -116,6 +127,7 @@
 		8EADB1A52A3AB00800F00CD9 /* code_6.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_6.cpp; sourceTree = "<group>"; };
 		8EADB1A72A3AE10200F00CD9 /* code_7.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_7.cpp; sourceTree = "<group>"; };
 		8EADB1A92A3B32AF00F00CD9 /* codelist_3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codelist_3.cpp; sourceTree = "<group>"; };
+		8EDE25532A8F9824009DFF23 /* 小红的日常分享.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "小红的日常分享.cpp"; sourceTree = "<group>"; };
 		8EDEF5652A4D7AE700F46001 /* codesa_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codesa_1.cpp; sourceTree = "<group>"; };
 		8EE9BA652A1B83EC00D6DC7C /* leetcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE9BA6F2A1B842F00D6DC7C /* code_8.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_8.cpp; sourceTree = "<group>"; };
@@ -181,6 +193,7 @@
 				8E17E30F2A678FAD0095BDBC /* 明明的随机数.cpp */,
 				8E17E3112A67BBB00095BDBC /* 进制转换.cpp */,
 				8E1131ED2A85E75B0091FCD1 /* 背包问题.cpp */,
+				8EDE25532A8F9824009DFF23 /* 小红的日常分享.cpp */,
 			);
 			path = nknet;
 			sourceTree = "<group>";
@@ -416,6 +429,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EDE25492A8F8C52009DFF23 /* codedp_1.cpp in Sources */,
+				8EDE254A2A8F8C52009DFF23 /* codedp_2.cpp in Sources */,
+				8EDE25542A8F9824009DFF23 /* 小红的日常分享.cpp in Sources */,
+				8EDE254B2A8F8C52009DFF23 /* codedp_3.cpp in Sources */,
+				8EDE254C2A8F8C52009DFF23 /* codedp_4.cpp in Sources */,
+				8EDE254D2A8F8C52009DFF23 /* codedp_5.cpp in Sources */,
+				8EDE254E2A8F8C52009DFF23 /* codedp_6.cpp in Sources */,
+				8EDE254F2A8F8C52009DFF23 /* codedp_7.cpp in Sources */,
+				8EDE25502A8F8C52009DFF23 /* codedp_8.cpp in Sources */,
+				8EDE25512A8F8C52009DFF23 /* codedp_9.cpp in Sources */,
+				8EDE25522A8F8C52009DFF23 /* codedp_10.cpp in Sources */,
 				8E1131EE2A85E78C0091FCD1 /* 汽水瓶.cpp in Sources */,
 				8E1131EF2A85E78C0091FCD1 /* 明明的随机数.cpp in Sources */,
 				8E1131F02A85E78C0091FCD1 /* 进制转换.cpp in Sources */,
