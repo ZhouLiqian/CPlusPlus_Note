@@ -23,8 +23,8 @@ public:
         if(root == nullptr)
             return nullptr;
         swap(root -> left, root -> right);
-        mirrorTree(root -> left);
-        mirrorTree(root -> right);
+        mirrorTree_1(root -> left);
+        mirrorTree_1(root -> right);
         return root;
     }
     

@@ -24,6 +24,14 @@
 		8EDE25542A8F9824009DFF23 /* 小红的日常分享.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE25532A8F9824009DFF23 /* 小红的日常分享.cpp */; };
 		8EDE25562A9354D7009DFF23 /* 两个链表的第一个公共节点.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE25552A9354D7009DFF23 /* 两个链表的第一个公共节点.cpp */; };
 		8EDE25582A935D38009DFF23 /* 二叉树的最近公共节点.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE25572A935D38009DFF23 /* 二叉树的最近公共节点.cpp */; };
+		8EDE255A2A95E72F009DFF23 /* 合并两个排序的链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE25592A95E72F009DFF23 /* 合并两个排序的链表.cpp */; };
+		8EDE255C2A95F110009DFF23 /* 二叉树的层序遍历.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE255B2A95F110009DFF23 /* 二叉树的层序遍历.cpp */; };
+		8EDE255E2A9603D5009DFF23 /* 环形链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE255D2A9603D5009DFF23 /* 环形链表.cpp */; };
+		8EDE25602A962941009DFF23 /* 最长不含重复字符的子字符串.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE255F2A962941009DFF23 /* 最长不含重复字符的子字符串.cpp */; };
+		8EDE25622A963915009DFF23 /* 反转链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE25612A963915009DFF23 /* 反转链表.cpp */; };
+		8EDE25642A964089009DFF23 /* 二叉树的镜像.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE25632A964089009DFF23 /* 二叉树的镜像.cpp */; };
+		8EDE25662A97458B009DFF23 /* 堆排序.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE25652A97458B009DFF23 /* 堆排序.cpp */; };
+		8EDE25682A978500009DFF23 /* 全排列.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE25672A978500009DFF23 /* 全排列.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -132,6 +140,14 @@
 		8EDE25532A8F9824009DFF23 /* 小红的日常分享.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "小红的日常分享.cpp"; sourceTree = "<group>"; };
 		8EDE25552A9354D7009DFF23 /* 两个链表的第一个公共节点.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "两个链表的第一个公共节点.cpp"; sourceTree = "<group>"; };
 		8EDE25572A935D38009DFF23 /* 二叉树的最近公共节点.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "二叉树的最近公共节点.cpp"; sourceTree = "<group>"; };
+		8EDE25592A95E72F009DFF23 /* 合并两个排序的链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "合并两个排序的链表.cpp"; sourceTree = "<group>"; };
+		8EDE255B2A95F110009DFF23 /* 二叉树的层序遍历.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "二叉树的层序遍历.cpp"; sourceTree = "<group>"; };
+		8EDE255D2A9603D5009DFF23 /* 环形链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "环形链表.cpp"; sourceTree = "<group>"; };
+		8EDE255F2A962941009DFF23 /* 最长不含重复字符的子字符串.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "最长不含重复字符的子字符串.cpp"; sourceTree = "<group>"; };
+		8EDE25612A963915009DFF23 /* 反转链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "反转链表.cpp"; sourceTree = "<group>"; };
+		8EDE25632A964089009DFF23 /* 二叉树的镜像.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "二叉树的镜像.cpp"; sourceTree = "<group>"; };
+		8EDE25652A97458B009DFF23 /* 堆排序.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "堆排序.cpp"; sourceTree = "<group>"; };
+		8EDE25672A978500009DFF23 /* 全排列.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "全排列.cpp"; sourceTree = "<group>"; };
 		8EDEF5652A4D7AE700F46001 /* codesa_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codesa_1.cpp; sourceTree = "<group>"; };
 		8EE9BA652A1B83EC00D6DC7C /* leetcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE9BA6F2A1B842F00D6DC7C /* code_8.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_8.cpp; sourceTree = "<group>"; };
@@ -200,6 +216,14 @@
 				8EDE25532A8F9824009DFF23 /* 小红的日常分享.cpp */,
 				8EDE25552A9354D7009DFF23 /* 两个链表的第一个公共节点.cpp */,
 				8EDE25572A935D38009DFF23 /* 二叉树的最近公共节点.cpp */,
+				8EDE25592A95E72F009DFF23 /* 合并两个排序的链表.cpp */,
+				8EDE255B2A95F110009DFF23 /* 二叉树的层序遍历.cpp */,
+				8EDE255D2A9603D5009DFF23 /* 环形链表.cpp */,
+				8EDE255F2A962941009DFF23 /* 最长不含重复字符的子字符串.cpp */,
+				8EDE25612A963915009DFF23 /* 反转链表.cpp */,
+				8EDE25632A964089009DFF23 /* 二叉树的镜像.cpp */,
+				8EDE25652A97458B009DFF23 /* 堆排序.cpp */,
+				8EDE25672A978500009DFF23 /* 全排列.cpp */,
 			);
 			path = nknet;
 			sourceTree = "<group>";
@@ -437,18 +461,26 @@
 			files = (
 				8EDE25492A8F8C52009DFF23 /* codedp_1.cpp in Sources */,
 				8EDE254A2A8F8C52009DFF23 /* codedp_2.cpp in Sources */,
+				8EDE255E2A9603D5009DFF23 /* 环形链表.cpp in Sources */,
+				8EDE25602A962941009DFF23 /* 最长不含重复字符的子字符串.cpp in Sources */,
 				8EDE25542A8F9824009DFF23 /* 小红的日常分享.cpp in Sources */,
 				8EDE254B2A8F8C52009DFF23 /* codedp_3.cpp in Sources */,
+				8EDE25682A978500009DFF23 /* 全排列.cpp in Sources */,
 				8EDE254C2A8F8C52009DFF23 /* codedp_4.cpp in Sources */,
 				8EDE254D2A8F8C52009DFF23 /* codedp_5.cpp in Sources */,
+				8EDE25642A964089009DFF23 /* 二叉树的镜像.cpp in Sources */,
 				8EDE254E2A8F8C52009DFF23 /* codedp_6.cpp in Sources */,
+				8EDE255A2A95E72F009DFF23 /* 合并两个排序的链表.cpp in Sources */,
 				8EDE25562A9354D7009DFF23 /* 两个链表的第一个公共节点.cpp in Sources */,
 				8EDE254F2A8F8C52009DFF23 /* codedp_7.cpp in Sources */,
+				8EDE255C2A95F110009DFF23 /* 二叉树的层序遍历.cpp in Sources */,
 				8EDE25502A8F8C52009DFF23 /* codedp_8.cpp in Sources */,
+				8EDE25662A97458B009DFF23 /* 堆排序.cpp in Sources */,
 				8EDE25512A8F8C52009DFF23 /* codedp_9.cpp in Sources */,
 				8EDE25522A8F8C52009DFF23 /* codedp_10.cpp in Sources */,
 				8E1131EE2A85E78C0091FCD1 /* 汽水瓶.cpp in Sources */,
 				8E1131EF2A85E78C0091FCD1 /* 明明的随机数.cpp in Sources */,
+				8EDE25622A963915009DFF23 /* 反转链表.cpp in Sources */,
 				8E1131F02A85E78C0091FCD1 /* 进制转换.cpp in Sources */,
 				8EDE25582A935D38009DFF23 /* 二叉树的最近公共节点.cpp in Sources */,
 				8E1131F12A85E78C0091FCD1 /* 背包问题.cpp in Sources */,
