@@ -14,16 +14,27 @@ struct ListNode{
 
 class Solution {
 public:
-    ListNode* reverseList(ListNode* head) {
-        if(!head) return head;
-        ListNode* dummy = new ListNode(0);
-        ListNode* cur = head;
-        while(cur){
-            ListNode* next = cur -> next;
-            cur -> next = dummy -> next;
-            dummy -> next = cur;
-            cur = next;
+    //双指针
+    ListNode* reverseList_1(ListNode* head) {
+        ListNode *cur = head, *pre = nullptr;
+        while(cur != nullptr) {
+            ListNode* tmp = cur->next; // 暂存后继节点 cur.next
+            cur->next = pre;           // 修改 next 引用指向
+            pre = cur;                 // pre 暂存 cur
+            cur = tmp;                 // cur 访问下一节点
         }
-        return dummy -> next;
+        return pre;
+    }
+    
+    //递归
+    ListNode* reverseList_2(ListNode* head) {
+        return recur(head, nullptr);
+    }
+private:
+    ListNode* recur(ListNode* cur, ListNode* pre){
+        if(cur == nullptr) return pre;
+        ListNode* res = recur(cur -> next, cur);
+        cur -> next = pre;
+        return res;
     }
 };

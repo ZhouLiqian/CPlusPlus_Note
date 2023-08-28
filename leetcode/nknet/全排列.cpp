@@ -13,7 +13,7 @@ public:
     vector<vector<int>> vec;
     void dfs(vector<int>& nums, int index){
         //结束条件
-        if(index == nums.size()){
+        if(index == nums.size() - 1){
             vec.push_back(nums);
             return;
         }
@@ -34,7 +34,7 @@ public:
     vector<vector<int>> n_vec;
     void dfsUni(vector<int>& nums, int index){
         //结束条件
-        if(index == nums.size()){
+        if(index == nums.size() - 1){
             n_vec.push_back(nums);
             return;
         }
