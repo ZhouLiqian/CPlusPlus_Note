@@ -33,6 +33,7 @@
 		8EDE25662A97458B009DFF23 /* 堆排序.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE25652A97458B009DFF23 /* 堆排序.cpp */; };
 		8EDE25682A978500009DFF23 /* 全排列.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE25672A978500009DFF23 /* 全排列.cpp */; };
 		8EDE256A2A9CB583009DFF23 /* 删除有序数组中的重复项.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE25692A9CB583009DFF23 /* 删除有序数组中的重复项.cpp */; };
+		8EDE256C2AA092A8009DFF23 /* 两个数组的交集.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EDE256B2AA092A8009DFF23 /* 两个数组的交集.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -150,6 +151,7 @@
 		8EDE25652A97458B009DFF23 /* 堆排序.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "堆排序.cpp"; sourceTree = "<group>"; };
 		8EDE25672A978500009DFF23 /* 全排列.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "全排列.cpp"; sourceTree = "<group>"; };
 		8EDE25692A9CB583009DFF23 /* 删除有序数组中的重复项.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "删除有序数组中的重复项.cpp"; sourceTree = "<group>"; };
+		8EDE256B2AA092A8009DFF23 /* 两个数组的交集.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "两个数组的交集.cpp"; sourceTree = "<group>"; };
 		8EDEF5652A4D7AE700F46001 /* codesa_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = codesa_1.cpp; sourceTree = "<group>"; };
 		8EE9BA652A1B83EC00D6DC7C /* leetcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = leetcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EE9BA6F2A1B842F00D6DC7C /* code_8.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = code_8.cpp; sourceTree = "<group>"; };
@@ -227,6 +229,7 @@
 				8EDE25652A97458B009DFF23 /* 堆排序.cpp */,
 				8EDE25672A978500009DFF23 /* 全排列.cpp */,
 				8EDE25692A9CB583009DFF23 /* 删除有序数组中的重复项.cpp */,
+				8EDE256B2AA092A8009DFF23 /* 两个数组的交集.cpp */,
 			);
 			path = nknet;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				8EDE25492A8F8C52009DFF23 /* codedp_1.cpp in Sources */,
 				8EDE254A2A8F8C52009DFF23 /* codedp_2.cpp in Sources */,
 				8EDE256A2A9CB583009DFF23 /* 删除有序数组中的重复项.cpp in Sources */,
+				8EDE256C2AA092A8009DFF23 /* 两个数组的交集.cpp in Sources */,
 				8EDE255E2A9603D5009DFF23 /* 环形链表.cpp in Sources */,
 				8EDE25602A962941009DFF23 /* 最长不含重复字符的子字符串.cpp in Sources */,
 				8EDE25542A8F9824009DFF23 /* 小红的日常分享.cpp in Sources */,
