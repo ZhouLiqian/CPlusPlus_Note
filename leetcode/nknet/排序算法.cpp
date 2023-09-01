@@ -1,24 +1,32 @@
-//  堆排序.cpp
+//  排序算法.cpp
 //  leetcode
-//  大根堆
-//  Created by Qian on 8/24/23.
+//  Created by Qian on 9/1/23.
 
 #include <iostream>
 using namespace::std;
 
+//快速排序
+void QuickSort(vector<int>& nums, int left, int right){
+    if(left >= right) return;
+    int i = left, j = right;
+    while (i < j) {
+        while (i < j && nums[j] >= nums[left]) j--;
+        while (i < j && nums[i] <= nums[left]) i++;
+        swap(nums[i], nums[j]);
+    }
+    swap(nums[left], nums[i]);
+    QuickSort(nums, left, i - 1);
+    QuickSort(nums, i + 1, right);
+}
+
+//堆排序
 void sift_down(int arr[], int start, int end){
-    //计算父节点和子节点的下标
     int parent = start;
     int child = parent * 2 + 1;
-    //边界限制
     while(child <= end){
-        //比较两子节点的大小
         if(child + 1 <= end && arr[child] < arr[child + 1]) child++;
-        //比较父子节点的大小
         if(arr[parent] >= arr[child]) return;
         else{
-            //父节点 < 子节点 -> 交换父子节点
-            //递归子孙节点
             swap(arr[parent], arr[child]);
             parent = child;
             child = parent * 2 + 1;
