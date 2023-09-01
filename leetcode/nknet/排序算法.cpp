@@ -5,7 +5,7 @@
 #include <iostream>
 using namespace::std;
 
-//快速排序
+//快速排序O(nlogn)
 void QuickSort(vector<int>& nums, int left, int right){
     if(left >= right) return;
     int i = left, j = right;
@@ -19,7 +19,7 @@ void QuickSort(vector<int>& nums, int left, int right){
     QuickSort(nums, i + 1, right);
 }
 
-//堆排序
+//堆排序O(nlogn)
 void sift_down(int arr[], int start, int end){
     int parent = start;
     int child = parent * 2 + 1;
@@ -39,5 +39,14 @@ void heap_sort(int arr[], int len){
     for(int i = len - 1; i > 0; i--){
         swap(arr[0], arr[i]);
         sift_down(arr, 0, i - 1);
+    }
+}
+
+//插入排序O(n^2)
+void InsertSort(vector<int>& nums){
+    for(int i = 1; i < nums.size(); i++){
+        for(int j = 0; j < i; j++){
+            if(nums[j] > nums[i]) swap(nums[j], nums[i]);
+        }
     }
 }
