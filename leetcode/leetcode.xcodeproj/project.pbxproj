@@ -34,6 +34,8 @@
 		8E3CFA7F2AB9D2B4003BA092 /* 数组中数字出现的次数.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E262E6B2A7A64F8006033B5 /* 数组中数字出现的次数.cpp */; };
 		8E3CFA802AB9D2B4003BA092 /* 二进制中1的个数.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E2D1EF12A5B93700061F6B7 /* 二进制中1的个数.cpp */; };
 		8E3CFA812AB9D2B4003BA092 /* 数组中数字出现的次数 II.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E262E6D2A7A650C006033B5 /* 数组中数字出现的次数 II.cpp */; };
+		8E3CFA832AB9D393003BA092 /* 把字符串转换成整数.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E3CFA822AB9D393003BA092 /* 把字符串转换成整数.cpp */; };
+		8E3CFA872AB9DC65003BA092 /* 合并两个链表.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E3CFA862AB9DC65003BA092 /* 合并两个链表.cpp */; };
 		8E4E87302AA1CF6800FC2BA5 /* 排序算法.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E4E872F2AA1CF6800FC2BA5 /* 排序算法.cpp */; };
 		8EDE25492A8F8C52009DFF23 /* 斐波那契数列.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2F42A5E558F0095BDBC /* 斐波那契数列.cpp */; };
 		8EDE254A2A8F8C52009DFF23 /* 青蛙跳台阶问题.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2F62A5F9DAC0095BDBC /* 青蛙跳台阶问题.cpp */; };
@@ -109,6 +111,8 @@
 		8E3CFA682AB9D299003BA092 /* 重建二叉树.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "重建二叉树.cpp"; sourceTree = "<group>"; };
 		8E3CFA692AB9D299003BA092 /* 表示数值的字符串.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "表示数值的字符串.cpp"; sourceTree = "<group>"; };
 		8E3CFA6A2AB9D299003BA092 /* 顺时针打印矩阵.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "顺时针打印矩阵.cpp"; sourceTree = "<group>"; };
+		8E3CFA822AB9D393003BA092 /* 把字符串转换成整数.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "把字符串转换成整数.cpp"; sourceTree = "<group>"; };
+		8E3CFA862AB9DC65003BA092 /* 合并两个链表.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "合并两个链表.cpp"; sourceTree = "<group>"; };
 		8E4E872F2AA1CF6800FC2BA5 /* 排序算法.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "排序算法.cpp"; sourceTree = "<group>"; };
 		8EDE25532A8F9824009DFF23 /* 小红的日常分享.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "小红的日常分享.cpp"; sourceTree = "<group>"; };
 		8EDE25552A9354D7009DFF23 /* 两个链表的第一个公共节点.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "两个链表的第一个公共节点.cpp"; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 				8EDE25692A9CB583009DFF23 /* 删除有序数组中的重复项.cpp */,
 				8EDE256B2AA092A8009DFF23 /* 两个数组的交集.cpp */,
 				8E4E872F2AA1CF6800FC2BA5 /* 排序算法.cpp */,
+				8E3CFA862AB9DC65003BA092 /* 合并两个链表.cpp */,
 			);
 			path = nknet;
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 				8E2D1EEF2A5962AA0061F6B7 /* 不用加减乘除做加法.cpp */,
 				8E262E6B2A7A64F8006033B5 /* 数组中数字出现的次数.cpp */,
 				8E262E6D2A7A650C006033B5 /* 数组中数字出现的次数 II.cpp */,
+				8E3CFA822AB9D393003BA092 /* 把字符串转换成整数.cpp */,
 			);
 			path = leetco;
 			sourceTree = "<group>";
@@ -293,6 +299,7 @@
 				8EDE25682A978500009DFF23 /* 全排列.cpp in Sources */,
 				8EDE254C2A8F8C52009DFF23 /* 连续子数组的最大和.cpp in Sources */,
 				8EDE254D2A8F8C52009DFF23 /* 礼物的最大价值.cpp in Sources */,
+				8E3CFA832AB9D393003BA092 /* 把字符串转换成整数.cpp in Sources */,
 				8EDE25642A964089009DFF23 /* 二叉树的镜像.cpp in Sources */,
 				8E4E87302AA1CF6800FC2BA5 /* 排序算法.cpp in Sources */,
 				8EDE254E2A8F8C52009DFF23 /* 把数字翻译成字符串.cpp in Sources */,
@@ -322,6 +329,7 @@
 				8E1131F02A85E78C0091FCD1 /* 进制转换.cpp in Sources */,
 				8E3CFA762AB9D2AE003BA092 /* 1～n 整数中 1 出现的次数.cpp in Sources */,
 				8E3CFA712AB9D299003BA092 /* 翻转单词顺序.cpp in Sources */,
+				8E3CFA872AB9DC65003BA092 /* 合并两个链表.cpp in Sources */,
 				8EDE25582A935D38009DFF23 /* 二叉树的最近公共节点.cpp in Sources */,
 				8E1131F12A85E78C0091FCD1 /* 背包问题.cpp in Sources */,
 			);
