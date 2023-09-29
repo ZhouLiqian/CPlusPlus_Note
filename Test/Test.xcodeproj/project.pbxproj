@@ -11,6 +11,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		8E1ADDCD2AC52FDE001CD280 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		8EF3A2912AB57EBA004F641F /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23,11 +32,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8E1ADDCF2AC52FDE001CD280 /* MainTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MainTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF3A2932AB57EBA004F641F /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF3A2962AB57EBA004F641F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8E1ADDCC2AC52FDE001CD280 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8EF3A2902AB57EBA004F641F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -50,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				8EF3A2932AB57EBA004F641F /* Test */,
+				8E1ADDCF2AC52FDE001CD280 /* MainTest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +83,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8E1ADDCE2AC52FDE001CD280 /* MainTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E1ADDD52AC52FDE001CD280 /* Build configuration list for PBXNativeTarget "MainTest" */;
+			buildPhases = (
+				8E1ADDCB2AC52FDE001CD280 /* Sources */,
+				8E1ADDCC2AC52FDE001CD280 /* Frameworks */,
+				8E1ADDCD2AC52FDE001CD280 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MainTest;
+			productName = MainTest;
+			productReference = 8E1ADDCF2AC52FDE001CD280 /* MainTest */;
+			productType = "com.apple.product-type.tool";
+		};
 		8EF3A2922AB57EBA004F641F /* Test */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8EF3A29A2AB57EBA004F641F /* Build configuration list for PBXNativeTarget "Test" */;
@@ -91,6 +126,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
+					8E1ADDCE2AC52FDE001CD280 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 					8EF3A2922AB57EBA004F641F = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
@@ -110,11 +148,19 @@
 			projectRoot = "";
 			targets = (
 				8EF3A2922AB57EBA004F641F /* Test */,
+				8E1ADDCE2AC52FDE001CD280 /* MainTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8E1ADDCB2AC52FDE001CD280 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8EF3A28F2AB57EBA004F641F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -126,6 +172,27 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		8E1ADDD32AC52FDE001CD280 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include/gtest;
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-l",
+					gtest,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8E1ADDD42AC52FDE001CD280 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		8EF3A2982AB57EBA004F641F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -254,6 +321,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8E1ADDD52AC52FDE001CD280 /* Build configuration list for PBXNativeTarget "MainTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E1ADDD32AC52FDE001CD280 /* Debug */,
+				8E1ADDD42AC52FDE001CD280 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8EF3A28E2AB57EBA004F641F /* Build configuration list for PBXProject "Test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
