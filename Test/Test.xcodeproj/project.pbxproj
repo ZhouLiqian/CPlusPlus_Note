@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E1ADDD82AC80D81001CD280 /* libgtest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1ADDD72AC80D81001CD280 /* libgtest.a */; };
 		8EF3A2972AB57EBA004F641F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8EF3A2962AB57EBA004F641F /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		8E1ADDCF2AC52FDE001CD280 /* MainTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MainTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1ADDD72AC80D81001CD280 /* libgtest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgtest.a; path = ../../../../../../usr/local/lib/libgtest.a; sourceTree = "<group>"; };
 		8EF3A2932AB57EBA004F641F /* Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Test; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EF3A2962AB57EBA004F641F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -42,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E1ADDD82AC80D81001CD280 /* libgtest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,11 +58,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E1ADDD62AC80D81001CD280 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E1ADDD72AC80D81001CD280 /* libgtest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8EF3A28A2AB57EBA004F641F = {
 			isa = PBXGroup;
 			children = (
 				8EF3A2952AB57EBA004F641F /* Test */,
 				8EF3A2942AB57EBA004F641F /* Products */,
+				8E1ADDD62AC80D81001CD280 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -177,6 +189,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				"HEADER_SEARCH_PATHS[arch=*]" = /usr/local/include/gtest;
+				"LIBRARY_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					/usr/local/lib,
+					"$(PROJECT_DIR)/",
+				);
 				"OTHER_LDFLAGS[arch=*]" = (
 					"-l",
 					gtest,
