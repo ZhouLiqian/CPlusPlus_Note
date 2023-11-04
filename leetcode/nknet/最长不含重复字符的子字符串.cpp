@@ -10,24 +10,17 @@ using namespace::std;
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
-        //状态
-        int len[s.size() + 1];
-        unordered_map<char, int> ma;
-        //初始化
-        for(int i = 0; i <= s.size(); i++)
-            len[i] = 0;
-        //做选择
-        int temp = 0;
-        for(int i = 1; i <= s.size(); i++){
-            if(ma.count(s[i-1]) == 0)
-                temp = temp + 1;
-            else{
-                temp = min(temp + 1, i - 1 - ma[s[i - 1]]);
-                
-            }
-            ma[s[i - 1]] = i - 1;
-            len[i] = max(len[i - 1], temp);
+        unordered_map<char, int> dic;
+        int res = 0, tmp = 0, len = int(s.size()), i;
+        for(int j = 0; j < len; j++){
+            if(dic.find(s[j]) == dic.end())
+                i = -1;
+            else
+                i = dic[s[j]];
+            dic[s[j]] = j;
+            tmp = tmp < j - i ? tmp + 1 : j - i;
+            res = max(tmp, res);
         }
-        return len[s.size()];
+        return res;
     }
 };

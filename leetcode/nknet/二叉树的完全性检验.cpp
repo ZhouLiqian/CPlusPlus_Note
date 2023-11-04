@@ -1,6 +1,5 @@
 //  二叉树的完全性检验.cpp
 //  leetcode
-//
 //  Created by Qian on 9/20/23.
 
 #include <iostream>
