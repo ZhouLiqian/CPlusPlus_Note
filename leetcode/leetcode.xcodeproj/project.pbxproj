@@ -62,6 +62,7 @@
 		8E3CFAB22ABABE68003BA092 /* 数组中的逆序对.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E3CFA9C2ABABE68003BA092 /* 数组中的逆序对.cpp */; };
 		8E3CFAB32ABABE68003BA092 /* 扑克牌中的顺子.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E3CFA9D2ABABE68003BA092 /* 扑克牌中的顺子.cpp */; };
 		8E3CFAB52ABABF13003BA092 /* 二叉树的完全性检验.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E3CFAB42ABABF13003BA092 /* 二叉树的完全性检验.cpp */; };
+		8E5F79582AFB82830008549C /* 比较版本号.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E5F79572AFB82830008549C /* 比较版本号.cpp */; };
 		8E9258612AE8E3DE003C4FB6 /* 判断数组无重复.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E9258602AE8E3DE003C4FB6 /* 判断数组无重复.cpp */; };
 		8EDE25492A8F8C52009DFF23 /* 斐波那契数列.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2F42A5E558F0095BDBC /* 斐波那契数列.cpp */; };
 		8EDE254A2A8F8C52009DFF23 /* 青蛙跳台阶问题.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8E17E2F62A5F9DAC0095BDBC /* 青蛙跳台阶问题.cpp */; };
@@ -165,6 +166,7 @@
 		8E3CFA9C2ABABE68003BA092 /* 数组中的逆序对.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "数组中的逆序对.cpp"; sourceTree = "<group>"; };
 		8E3CFA9D2ABABE68003BA092 /* 扑克牌中的顺子.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "扑克牌中的顺子.cpp"; sourceTree = "<group>"; };
 		8E3CFAB42ABABF13003BA092 /* 二叉树的完全性检验.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "二叉树的完全性检验.cpp"; sourceTree = "<group>"; };
+		8E5F79572AFB82830008549C /* 比较版本号.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "比较版本号.cpp"; sourceTree = "<group>"; };
 		8E9258602AE8E3DE003C4FB6 /* 判断数组无重复.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "判断数组无重复.cpp"; sourceTree = "<group>"; };
 		8EDE25532A8F9824009DFF23 /* 小红的日常分享.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "小红的日常分享.cpp"; sourceTree = "<group>"; };
 		8EDE25552A9354D7009DFF23 /* 两个链表的第一个公共节点.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "两个链表的第一个公共节点.cpp"; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				8E2676542AD68660003EF053 /* 快速排序算法.cpp */,
 				8E19E3042AD69D70006C35A8 /* 归并排序算法.cpp */,
 				8E9258602AE8E3DE003C4FB6 /* 判断数组无重复.cpp */,
+				8E5F79572AFB82830008549C /* 比较版本号.cpp */,
 			);
 			path = nknet;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				8E3CFAA42ABABE68003BA092 /* 替换空格.cpp in Sources */,
 				8EDE255C2A95F110009DFF23 /* 二叉树的层序遍历.cpp in Sources */,
 				8EDE25502A8F8C52009DFF23 /* 正则表达式匹配.cpp in Sources */,
+				8E5F79582AFB82830008549C /* 比较版本号.cpp in Sources */,
 				8EDE25512A8F8C52009DFF23 /* 丑数.cpp in Sources */,
 				8E3CFA702AB9D299003BA092 /* 矩阵中的路径.cpp in Sources */,
 				8E3CFA802AB9D2B4003BA092 /* 二进制中1的个数.cpp in Sources */,
