@@ -4,18 +4,18 @@
 #include <mutex>
 
 
-//// "busy sleep" while suggesting that other threads run
-//// for a small amount of time
-//void little_sleep(std::chrono::microseconds us)
-//{
-//    auto start = std::chrono::high_resolution_clock::now();
-//    auto end = start + us;
-//    do {
-//        std::this_thread::yield();
-//    } while (std::chrono::high_resolution_clock::now() < end);
-//    std::cout << "cout current thread!" << std::endl;
-//}
-//
+// "busy sleep" while suggesting that other threads run
+// for a small amount of time
+void little_sleep(std::chrono::microseconds us)
+{
+    auto start = std::chrono::high_resolution_clock::now();
+    auto end = start + us;
+    do {
+        std::this_thread::yield();
+    } while (std::chrono::high_resolution_clock::now() < end);
+    std::cout << "cout current thread!" << std::endl;
+}
+
 //int main()
 //{
 //    auto start = std::chrono::high_resolution_clock::now();
